@@ -1,4 +1,0 @@
-{
-    "image": "python:3.10",
-    "postCreateCommand": "pip install transformers peft huggingface_hub && huggingface-cli download FinGPT/fingpt-mt_llama2-7b_lora --local-dir models/fingpt"
-}
