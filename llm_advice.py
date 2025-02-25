@@ -8,6 +8,17 @@ class LLMClient:
     def get_advice(self, portfolio, stock_prices, news):
         raise NotImplementedError("Subclasses must implement get_advice.")
 
+    def _build_prompt(self, portfolio, stock_prices, news):
+        """Shared prompt construction for all LLM models."""
+        return f"""
+        You are a financial advisor. Based on the following data, provide investment advice for today.
+        Portfolio: Cash: ${portfolio['cash']}, Stocks: {portfolio['stocks']}
+        Risk Level: {portfolio['risk_level']}
+        Today's Stock Prices: {stock_prices}
+        Today's News: {news}
+        Provide specific advice (e.g., buy/sell/hold, how much) and a brief rationale.
+        """
+
 class OpenAIClient(LLMClient):
     def __init__(self):
         self.client = openai.OpenAI(api_key=OPENAI_API_KEY)
@@ -25,16 +36,6 @@ class OpenAIClient(LLMClient):
         )
         return response.choices[0].message.content.strip()
 
-    def _build_prompt(self, portfolio, stock_prices, news):
-        return f"""
-        You are a financial advisor. Based on the following data, provide investment advice for today.
-        Portfolio: Cash: ${portfolio['cash']}, Stocks: {portfolio['stocks']}
-        Risk Level: {portfolio['risk_level']}
-        Today's Stock Prices: {stock_prices}
-        Today's News: {news}
-        Provide specific advice (e.g., buy/sell/hold, how much) and a brief rationale.
-        """
-
 class Grok3Client(LLMClient):
     def __init__(self):
         self.client = openai.OpenAI(
@@ -45,7 +46,7 @@ class Grok3Client(LLMClient):
     def get_advice(self, portfolio, stock_prices, news):
         prompt = self._build_prompt(portfolio, stock_prices, news)
         response = self.client.chat.completions.create(
-            model="grok-3",  # Updated to Grok 3
+            model="grok-2-latest",  # Keeping your updated model name
             messages=[
                 {"role": "system", "content": "You are a financial expert."},
                 {"role": "user", "content": prompt}
@@ -54,16 +55,6 @@ class Grok3Client(LLMClient):
             temperature=0.7
         )
         return response.choices[0].message.content.strip()
-
-    def _build_prompt(self, portfolio, stock_prices, news):
-        return f"""
-        You are a financial advisor. Based on the following data, provide investment advice for today.
-        Portfolio: Cash: ${portfolio['cash']}, Stocks: {portfolio['stocks']}
-        Risk Level: {portfolio['risk_level']}
-        Today's Stock Prices: {stock_prices}
-        Today's News: {news}
-        Provide specific advice (e.g., buy/sell/hold, how much) and a brief rationale.
-        """
 
 class FinGPTClient(LLMClient):
     def __init__(self):
@@ -83,16 +74,6 @@ class FinGPTClient(LLMClient):
             do_sample=True
         )
         return self.tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
-
-    def _build_prompt(self, portfolio, stock_prices, news):
-        return f"""
-        You are a financial advisor. Based on the following data, provide investment advice for today.
-        Portfolio: Cash: ${portfolio['cash']}, Stocks: {portfolio['stocks']}
-        Risk Level: {portfolio['risk_level']}
-        Today's Stock Prices: {stock_prices}
-        Today's News: {news}
-        Provide specific advice (e.g., buy/sell/hold, how much) and a brief rationale.
-        """
 
 def get_llm_client(llm_name):
     llm_name = llm_name.lower()

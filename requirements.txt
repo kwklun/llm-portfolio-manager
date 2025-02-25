@@ -1,8 +1,7 @@
 # requirements.txt
-
-# Core dependencies for all modules
-openai>=1.0.0        # For OpenAI ChatGPT API
-yfinance>=0.2.40     # For fetching stock prices from Yahoo Finance
-newsapi-python>=0.2.7  # For NewsAPI integration
-transformers>=4.35.0  # For FinGPT from Hugging Face
-torch>=2.0.0         # For FinGPT inference (PyTorch)
+openai>=1.0.0
+yfinance>=0.2.40
+newsapi-python>=0.2.7
+transformers>=4.35.0
+torch>=2.0.0
+pandas>=2.0.0  # Added for CSV reading
