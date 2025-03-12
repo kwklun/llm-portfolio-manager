@@ -1,0 +1,1325 @@
+
+==================================================
+Processing file: comp.finratios.parquet
+==================================================
+
+Field Names and Data Types:
+<pyarrow._parquet.ParquetSchema object at 0x100592d40>
+required group field_id=-1 schema {
+  optional binary field_id=-1 gvkey (String);
+  optional double field_id=-1 permno;
+  optional binary field_id=-1 adate (String);
+  optional binary field_id=-1 qdate (String);
+  optional binary field_id=-1 public_date (String);
+  optional double field_id=-1 capei;
+  optional double field_id=-1 be;
+  optional double field_id=-1 bm;
+  optional double field_id=-1 evm;
+  optional double field_id=-1 pe_op_basic;
+  optional double field_id=-1 pe_op_dil;
+  optional double field_id=-1 pe_exi;
+  optional double field_id=-1 pe_inc;
+  optional double field_id=-1 ps;
+  optional double field_id=-1 pcf;
+  optional double field_id=-1 dpr;
+  optional double field_id=-1 npm;
+  optional double field_id=-1 opmbd;
+  optional double field_id=-1 opmad;
+  optional double field_id=-1 gpm;
+  optional double field_id=-1 ptpm;
+  optional double field_id=-1 cfm;
+  optional double field_id=-1 roa;
+  optional double field_id=-1 roe;
+  optional double field_id=-1 roce;
+  optional double field_id=-1 efftax;
+  optional double field_id=-1 aftret_eq;
+  optional double field_id=-1 aftret_invcapx;
+  optional double field_id=-1 aftret_equity;
+  optional double field_id=-1 pretret_noa;
+  optional double field_id=-1 pretret_earnat;
+  optional double field_id=-1 gprof;
+  optional double field_id=-1 equity_invcap;
+  optional double field_id=-1 debt_invcap;
+  optional double field_id=-1 totdebt_invcap;
+  optional double field_id=-1 capital_ratio;
+  optional double field_id=-1 int_debt;
+  optional double field_id=-1 int_totdebt;
+  optional double field_id=-1 cash_lt;
+  optional double field_id=-1 invt_act;
+  optional double field_id=-1 rect_act;
+  optional double field_id=-1 debt_at;
+  optional double field_id=-1 debt_ebitda;
+  optional double field_id=-1 short_debt;
+  optional double field_id=-1 curr_debt;
+  optional double field_id=-1 lt_debt;
+  optional double field_id=-1 profit_lct;
+  optional double field_id=-1 ocf_lct;
+  optional double field_id=-1 cash_debt;
+  optional double field_id=-1 fcf_ocf;
+  optional double field_id=-1 lt_ppent;
+  optional double field_id=-1 dltt_be;
+  optional double field_id=-1 debt_assets;
+  optional double field_id=-1 debt_capital;
+  optional double field_id=-1 de_ratio;
+  optional double field_id=-1 intcov;
+  optional double field_id=-1 intcov_ratio;
+  optional double field_id=-1 cash_ratio;
+  optional double field_id=-1 quick_ratio;
+  optional double field_id=-1 curr_ratio;
+  optional double field_id=-1 cash_conversion;
+  optional double field_id=-1 inv_turn;
+  optional double field_id=-1 at_turn;
+  optional double field_id=-1 rect_turn;
+  optional double field_id=-1 pay_turn;
+  optional double field_id=-1 sale_invcap;
+  optional double field_id=-1 sale_equity;
+  optional double field_id=-1 sale_nwc;
+  optional double field_id=-1 rd_sale;
+  optional double field_id=-1 adv_sale;
+  optional double field_id=-1 staff_sale;
+  optional double field_id=-1 accrual;
+  optional double field_id=-1 ret_crsp;
+  optional binary field_id=-1 gsector (String);
+  optional binary field_id=-1 gicdesc (String);
+  optional double field_id=-1 mktcap;
+  optional double field_id=-1 price;
+  optional double field_id=-1 ptb;
+  optional double field_id=-1 peg_trailing;
+  optional double field_id=-1 divyield;
+  optional binary field_id=-1 ffi5_desc (String);
+  optional double field_id=-1 ffi5;
+  optional binary field_id=-1 ffi10_desc (String);
+  optional double field_id=-1 ffi10;
+  optional binary field_id=-1 ffi12_desc (String);
+  optional double field_id=-1 ffi12;
+  optional binary field_id=-1 ffi17_desc (String);
+  optional double field_id=-1 ffi17;
+  optional binary field_id=-1 ffi30_desc (String);
+  optional double field_id=-1 ffi30;
+  optional binary field_id=-1 ffi38_desc (String);
+  optional double field_id=-1 ffi38;
+  optional binary field_id=-1 ffi48_desc (String);
+  optional double field_id=-1 ffi48;
+  optional binary field_id=-1 ffi49_desc (String);
+  optional double field_id=-1 ffi49;
+  optional binary field_id=-1 ticker (String);
+  optional binary field_id=-1 cusip (String);
+}
+
+
+First 5 Rows:
+    gvkey   permno       adate       qdate public_date      capei      be        bm        evm  pe_op_basic  pe_op_dil     pe_exi     pe_inc        ps        pcf  dpr       npm     opmbd     opmad       gpm      ptpm       cfm       roa       roe      roce    efftax  aftret_eq  aftret_invcapx  aftret_equity  pretret_noa  pretret_earnat     gprof  equity_invcap  debt_invcap  totdebt_invcap  capital_ratio  int_debt  int_totdebt   cash_lt  invt_act  rect_act   debt_at  debt_ebitda  short_debt  curr_debt   lt_debt  profit_lct   ocf_lct  cash_debt  fcf_ocf  lt_ppent   dltt_be  debt_assets  debt_capital   de_ratio     intcov  intcov_ratio  cash_ratio  quick_ratio  curr_ratio  cash_conversion  inv_turn   at_turn  rect_turn  pay_turn  sale_invcap  sale_equity   sale_nwc   rd_sale  adv_sale  staff_sale   accrual  ret_crsp gsector gicdesc    mktcap  price       ptb  peg_trailing  divyield ffi5_desc  ffi5 ffi10_desc  ffi10 ffi12_desc  ffi12 ffi17_desc  ffi17 ffi30_desc  ffi30 ffi38_desc  ffi38 ffi48_desc  ffi48 ffi49_desc  ffi49 ticker     cusip
+0  013409  11393.0  1991-12-31  1992-06-30  1992-09-30 -16.746611  29.805  0.859491 -40.660124    -7.142857        NaN  -4.639175  -4.639175  1.638240  15.544022  NaN -0.349607 -0.031898 -0.194021  0.346338 -0.351716 -0.187484 -0.014719 -0.198682 -0.100814       NaN  -0.198682       -0.174629      -0.198682    -0.106098       -0.093410  0.165787       0.912461     0.087539        0.091019       0.087539  0.092023     0.088504  1.222176  0.184473  0.195531  0.078704    -5.154545    0.038240   0.641259  0.358741   -0.112847  0.372861   0.324852      NaN  0.378749  0.095937     0.211000      0.121635   0.267427 -23.025362    -13.333333    1.905899     2.506971    3.074050       115.874534  4.077954  0.478684   5.885803  9.901301     0.553587     0.606696   1.705742  0.098381  0.016048         0.0 -0.212304 -0.052632    None    None  31.07250   4.50  1.042526     -0.097116       NaN     MANUF   2.0      MANUF    3.0      MANUF    3.0      DURBL    5.0       None    NaN      RUBBR   16.0      RUBBR   15.0      RUBBR   15.0   SWTX  84490910
+1  013409  11393.0  1991-12-31  1992-06-30  1992-10-31 -22.328815  29.805  0.859491 -40.660124    -9.523809        NaN  -6.185567  -6.185567  2.184320  20.725363  NaN -0.349607 -0.031898 -0.194021  0.346338 -0.351716 -0.187484 -0.014719 -0.198682 -0.100814       NaN  -0.198682       -0.174629      -0.198682    -0.106098       -0.093410  0.165787       0.912461     0.087539        0.091019       0.087539  0.092023     0.088504  1.222176  0.184473  0.195531  0.078704    -5.154545    0.038240   0.641259  0.358741   -0.112847  0.372861   0.324852      NaN  0.378749  0.095937     0.211000      0.121635   0.267427 -23.025362    -13.333333    1.905899     2.506971    3.074050       115.874534  4.077954  0.478684   5.885803  9.901301     0.553587     0.606696   1.705742  0.098381  0.016048         0.0 -0.212304  0.333333    None    None  41.43000   6.00  1.390035     -0.129489       NaN     MANUF   2.0      MANUF    3.0      MANUF    3.0      DURBL    5.0       None    NaN      RUBBR   16.0      RUBBR   15.0      RUBBR   15.0   SWTX  84490910
+2  013417  11425.0  1986-12-31  1987-06-30  1987-09-30        NaN  10.024  0.417667   3.737255          NaN        NaN        NaN        NaN  0.322297   4.616094  0.0  0.025119  0.146958  0.097872  0.293465  0.043235  0.074206  0.211201  0.461266  0.186438  0.455495   0.795113        0.159616       0.795113     0.195282        0.144744  0.431201       0.127690     0.872310        0.920196       0.872310  0.135355     0.128311  0.018402  0.484961  0.433996  0.645911     2.991266    0.052039   0.278021  0.672582    0.853142  0.405330        NaN      NaN  1.542679  5.111902     0.910370      0.894314  10.157032   1.445335      1.735180    0.066189     0.801008    1.555237        69.990410  5.438225  1.469344   8.600911  9.313313     2.093296    16.393515  10.455583  0.000000  0.000000         0.0 -0.064892 -0.049180    None    None  23.51900   7.25  2.346269           NaN       NaN     CNSMR   1.0      DURBL    2.0      DURBL    2.0       None    NaN       None    NaN      MANUF   25.0       None    NaN       None    NaN   JASN  47117110
+3  013409  11393.0  1991-12-31  1992-09-30  1992-11-30 -22.171205  30.245  1.070411  24.216335   -41.666666        NaN -41.666666 -41.666666  2.034041  13.665690  NaN -0.050855  0.061602 -0.079229  0.387802 -0.051562  0.089975  0.032986 -0.034514 -0.048893       NaN  -0.034514       -0.023904      -0.034514    -0.050642       -0.043600  0.209998       0.911001     0.088999        0.092840       0.088999  0.087322     0.083709  1.186425  0.185546  0.193366  0.079273     2.376435    0.041372   0.657886  0.342114    0.228267  0.551543   0.324852      NaN  0.405288  0.097693     0.222128      0.127617   0.285558  -3.150000     -6.465385    1.803388     2.364843    2.903593       103.981381  4.210714  0.541509   6.599891  9.735305     0.634186     0.696141   1.946603  0.089409  0.016048         0.0 -0.106872  0.041667    None    None  43.15625   6.25  1.426889           NaN       NaN     MANUF   2.0      MANUF    3.0      MANUF    3.0      DURBL    5.0       None    NaN      RUBBR   16.0      RUBBR   15.0      RUBBR   15.0   SWTX  84490910
+4  013409  11393.0  1991-12-31  1992-09-30  1992-12-31 -17.739532  30.245  1.070411  24.216335   -39.999999        NaN -39.999999 -39.999999  1.627469  10.934136  NaN -0.050855  0.061602 -0.079229  0.387802 -0.051562  0.089975  0.032986 -0.034514 -0.048893       NaN  -0.034514       -0.023904      -0.034514    -0.050642       -0.043600  0.209998       0.911001     0.088999        0.092840       0.088999  0.087322     0.083709  1.186425  0.185546  0.193366  0.079273     2.376435    0.041372   0.657886  0.342114    0.228267  0.551543   0.324852      NaN  0.405288  0.097693     0.222128      0.127617   0.285558  -3.150000     -6.465385    1.803388     2.364843    2.903593       103.981381  4.210714  0.541509   6.599891  9.735305     0.634186     0.696141   1.946603  0.089409  0.016048         0.0 -0.106872 -0.040000    None    None  34.53000   6.00  1.141676           NaN       NaN     MANUF   2.0      MANUF    3.0      MANUF    3.0      DURBL    5.0       None    NaN      RUBBR   16.0      RUBBR   15.0      RUBBR   15.0   SWTX  84490910
+
+==================================================
+Processing file: comp.funda.parquet
+==================================================
+
+Field Names and Data Types:
+<pyarrow._parquet.ParquetSchema object at 0x1119aef40>
+required group field_id=-1 schema {
+  optional binary field_id=-1 gvkey (String);
+  optional binary field_id=-1 datadate (String);
+  optional int32 field_id=-1 fyear;
+  optional binary field_id=-1 indfmt (String);
+  optional binary field_id=-1 consol (String);
+  optional binary field_id=-1 popsrc (String);
+  optional binary field_id=-1 datafmt (String);
+  optional binary field_id=-1 tic (String);
+  optional binary field_id=-1 cusip (String);
+  optional binary field_id=-1 conm (String);
+  optional binary field_id=-1 acctchg (String);
+  optional binary field_id=-1 acctstd (String);
+  optional binary field_id=-1 acqmeth (String);
+  optional double field_id=-1 adrr;
+  optional double field_id=-1 ajex;
+  optional double field_id=-1 ajp;
+  optional binary field_id=-1 bspr (String);
+  optional binary field_id=-1 compst (String);
+  optional binary field_id=-1 curcd (String);
+  optional binary field_id=-1 curncd (String);
+  optional double field_id=-1 currtr;
+  optional double field_id=-1 curuscn;
+  optional binary field_id=-1 final (String);
+  optional int32 field_id=-1 fyr;
+  optional int32 field_id=-1 ismod;
+  optional binary field_id=-1 ltcm (String);
+  optional binary field_id=-1 ogm (String);
+  optional int32 field_id=-1 pddur;
+  optional int32 field_id=-1 scf;
+  optional int32 field_id=-1 src;
+  optional binary field_id=-1 stalt (String);
+  optional binary field_id=-1 udpl (String);
+  optional int32 field_id=-1 upd;
+  optional binary field_id=-1 apdedate (String);
+  optional binary field_id=-1 fdate (String);
+  optional binary field_id=-1 pdate (String);
+  optional double field_id=-1 acchg;
+  optional double field_id=-1 acco;
+  optional double field_id=-1 accrt;
+  optional double field_id=-1 acdo;
+  optional double field_id=-1 aco;
+  optional double field_id=-1 acodo;
+  optional double field_id=-1 acominc;
+  optional double field_id=-1 acox;
+  optional double field_id=-1 acoxar;
+  optional double field_id=-1 acqao;
+  optional double field_id=-1 acqcshi;
+  optional double field_id=-1 acqgdwl;
+  optional double field_id=-1 acqic;
+  optional double field_id=-1 acqintan;
+  optional double field_id=-1 acqinvt;
+  optional double field_id=-1 acqlntal;
+  optional double field_id=-1 acqniintc;
+  optional double field_id=-1 acqppe;
+  optional double field_id=-1 acqsc;
+  optional double field_id=-1 act;
+  optional double field_id=-1 adpac;
+  optional double field_id=-1 aedi;
+  optional double field_id=-1 afudcc;
+  optional double field_id=-1 afudci;
+  optional double field_id=-1 aldo;
+  optional double field_id=-1 am;
+  optional double field_id=-1 amc;
+  optional double field_id=-1 amdc;
+  optional double field_id=-1 amgw;
+  optional double field_id=-1 ano;
+  optional double field_id=-1 ao;
+  optional double field_id=-1 aocidergl;
+  optional double field_id=-1 aociother;
+  optional double field_id=-1 aocipen;
+  optional double field_id=-1 aocisecgl;
+  optional double field_id=-1 aodo;
+  optional double field_id=-1 aol2;
+  optional double field_id=-1 aoloch;
+  optional double field_id=-1 aox;
+  optional double field_id=-1 ap;
+  optional double field_id=-1 apalch;
+  optional double field_id=-1 apb;
+  optional double field_id=-1 apc;
+  optional double field_id=-1 apofs;
+  optional double field_id=-1 aqa;
+  optional double field_id=-1 aqc;
+  optional double field_id=-1 aqd;
+  optional double field_id=-1 aqeps;
+  optional double field_id=-1 aqi;
+  optional double field_id=-1 aqp;
+  optional double field_id=-1 aqpl1;
+  optional double field_id=-1 aqs;
+  optional double field_id=-1 arb;
+  optional double field_id=-1 arc;
+  optional double field_id=-1 arce;
+  optional double field_id=-1 arced;
+  optional double field_id=-1 arceeps;
+  optional double field_id=-1 artfs;
+  optional double field_id=-1 at;
+  optional double field_id=-1 aul3;
+  optional double field_id=-1 autxr;
+  optional double field_id=-1 balr;
+  optional double field_id=-1 banlr;
+  optional double field_id=-1 bast;
+  optional double field_id=-1 bastr;
+  optional double field_id=-1 batr;
+  optional double field_id=-1 bcef;
+  optional double field_id=-1 bclr;
+  optional double field_id=-1 bcltbl;
+  optional double field_id=-1 bcnlr;
+  optional double field_id=-1 bcrbl;
+  optional double field_id=-1 bct;
+  optional double field_id=-1 bctbl;
+  optional double field_id=-1 bctr;
+  optional double field_id=-1 billexce;
+  optional double field_id=-1 bkvlps;
+  optional double field_id=-1 bltbl;
+  optional double field_id=-1 ca;
+  optional double field_id=-1 capr1;
+  optional double field_id=-1 capr2;
+  optional double field_id=-1 capr3;
+  optional double field_id=-1 caps;
+  optional double field_id=-1 capsft;
+  optional double field_id=-1 capx;
+  optional double field_id=-1 capxv;
+  optional double field_id=-1 cb;
+  optional double field_id=-1 cbi;
+  optional double field_id=-1 cdpac;
+  optional double field_id=-1 cdvc;
+  optional double field_id=-1 ceiexbill;
+  optional double field_id=-1 ceq;
+  optional double field_id=-1 ceql;
+  optional double field_id=-1 ceqt;
+  optional double field_id=-1 cfbd;
+  optional double field_id=-1 cfere;
+  optional double field_id=-1 cfo;
+  optional double field_id=-1 cfpdo;
+  optional double field_id=-1 cga;
+  optional double field_id=-1 cgri;
+  optional double field_id=-1 cgti;
+  optional double field_id=-1 cgui;
+  optional double field_id=-1 ch;
+  optional double field_id=-1 che;
+  optional double field_id=-1 chech;
+  optional double field_id=-1 chs;
+  optional double field_id=-1 ci;
+  optional double field_id=-1 cibegni;
+  optional double field_id=-1 cicurr;
+  optional double field_id=-1 cidergl;
+  optional double field_id=-1 cimii;
+  optional double field_id=-1 ciother;
+  optional double field_id=-1 cipen;
+  optional double field_id=-1 cisecgl;
+  optional double field_id=-1 citotal;
+  optional double field_id=-1 cld2;
+  optional double field_id=-1 cld3;
+  optional double field_id=-1 cld4;
+  optional double field_id=-1 cld5;
+  optional double field_id=-1 clfc;
+  optional double field_id=-1 clfx;
+  optional double field_id=-1 clg;
+  optional double field_id=-1 clis;
+  optional double field_id=-1 cll;
+  optional double field_id=-1 cllc;
+  optional double field_id=-1 clo;
+  optional double field_id=-1 clrll;
+  optional double field_id=-1 clt;
+  optional double field_id=-1 cmp;
+  optional double field_id=-1 cnltbl;
+  optional double field_id=-1 cogs;
+  optional double field_id=-1 cpcbl;
+  optional double field_id=-1 cpdoi;
+  optional double field_id=-1 cpnli;
+  optional double field_id=-1 cppbl;
+  optional double field_id=-1 cprei;
+  optional double field_id=-1 crv;
+  optional double field_id=-1 crvnli;
+  optional double field_id=-1 cshfd;
+  optional double field_id=-1 cshi;
+  optional double field_id=-1 csho;
+  optional double field_id=-1 cshpri;
+  optional double field_id=-1 cshr;
+  optional double field_id=-1 cshrc;
+  optional double field_id=-1 cshrp;
+  optional double field_id=-1 cshrso;
+  optional double field_id=-1 cshrt;
+  optional double field_id=-1 cshrw;
+  optional double field_id=-1 cstk;
+  optional double field_id=-1 cstkcv;
+  optional double field_id=-1 cstke;
+  optional double field_id=-1 dbi;
+  optional double field_id=-1 dc;
+  optional double field_id=-1 dclo;
+  optional double field_id=-1 dcom;
+  optional double field_id=-1 dcpstk;
+  optional double field_id=-1 dcs;
+  optional double field_id=-1 dcvsr;
+  optional double field_id=-1 dcvsub;
+  optional double field_id=-1 dcvt;
+  optional double field_id=-1 dd;
+  optional double field_id=-1 dd1;
+  optional double field_id=-1 dd2;
+  optional double field_id=-1 dd3;
+  optional double field_id=-1 dd4;
+  optional double field_id=-1 dd5;
+  optional double field_id=-1 depc;
+  optional double field_id=-1 derac;
+  optional double field_id=-1 deralt;
+  optional double field_id=-1 derhedgl;
+  optional double field_id=-1 derlc;
+  optional double field_id=-1 derllt;
+  optional double field_id=-1 dfpac;
+  optional double field_id=-1 dfs;
+  optional double field_id=-1 dfxa;
+  optional double field_id=-1 diladj;
+  optional double field_id=-1 dilavx;
+  optional double field_id=-1 dlc;
+  optional double field_id=-1 dlcch;
+  optional double field_id=-1 dltis;
+  optional double field_id=-1 dlto;
+  optional double field_id=-1 dltp;
+  optional double field_id=-1 dltr;
+  optional double field_id=-1 dltsub;
+  optional double field_id=-1 dltt;
+  optional double field_id=-1 dm;
+  optional double field_id=-1 dn;
+  optional double field_id=-1 do;
+  optional double field_id=-1 donr;
+  optional double field_id=-1 dp;
+  optional double field_id=-1 dpacb;
+  optional double field_id=-1 dpacc;
+  optional double field_id=-1 dpacli;
+  optional double field_id=-1 dpacls;
+  optional double field_id=-1 dpacme;
+  optional double field_id=-1 dpacnr;
+  optional double field_id=-1 dpaco;
+  optional double field_id=-1 dpacre;
+  optional double field_id=-1 dpact;
+  optional double field_id=-1 dpc;
+  optional double field_id=-1 dpdc;
+  optional double field_id=-1 dpltb;
+  optional double field_id=-1 dpret;
+  optional double field_id=-1 dpsc;
+  optional double field_id=-1 dpstb;
+  optional double field_id=-1 dptb;
+  optional double field_id=-1 dptc;
+  optional double field_id=-1 dptic;
+  optional double field_id=-1 dpvieb;
+  optional double field_id=-1 dpvio;
+  optional double field_id=-1 dpvir;
+  optional double field_id=-1 drc;
+  optional double field_id=-1 drci;
+  optional double field_id=-1 drlt;
+  optional double field_id=-1 ds;
+  optional double field_id=-1 dt;
+  optional double field_id=-1 dtea;
+  optional double field_id=-1 dted;
+  optional double field_id=-1 dteeps;
+  optional double field_id=-1 dtep;
+  optional double field_id=-1 dudd;
+  optional double field_id=-1 dv;
+  optional double field_id=-1 dvc;
+  optional double field_id=-1 dvdnp;
+  optional double field_id=-1 dvintf;
+  optional double field_id=-1 dvp;
+  optional double field_id=-1 dvpa;
+  optional double field_id=-1 dvpd;
+  optional double field_id=-1 dvpdp;
+  optional double field_id=-1 dvpibb;
+  optional double field_id=-1 dvrpiv;
+  optional double field_id=-1 dvrre;
+  optional double field_id=-1 dvsco;
+  optional double field_id=-1 dvt;
+  optional double field_id=-1 dxd2;
+  optional double field_id=-1 dxd3;
+  optional double field_id=-1 dxd4;
+  optional double field_id=-1 dxd5;
+  optional double field_id=-1 ea;
+  optional double field_id=-1 ebit;
+  optional double field_id=-1 ebitda;
+  optional double field_id=-1 eiea;
+  optional double field_id=-1 emol;
+  optional double field_id=-1 emp;
+  optional double field_id=-1 epsfi;
+  optional double field_id=-1 epsfx;
+  optional double field_id=-1 epspi;
+  optional double field_id=-1 epspx;
+  optional double field_id=-1 esopct;
+  optional double field_id=-1 esopdlt;
+  optional double field_id=-1 esopnr;
+  optional double field_id=-1 esopr;
+  optional double field_id=-1 esopt;
+  optional double field_id=-1 esub;
+  optional double field_id=-1 esubc;
+  optional double field_id=-1 excadj;
+  optional double field_id=-1 exre;
+  optional double field_id=-1 fatb;
+  optional double field_id=-1 fatc;
+  optional double field_id=-1 fatd;
+  optional double field_id=-1 fate;
+  optional double field_id=-1 fatl;
+  optional double field_id=-1 fatn;
+  optional double field_id=-1 fato;
+  optional double field_id=-1 fatp;
+  optional double field_id=-1 fca;
+  optional double field_id=-1 fdfr;
+  optional double field_id=-1 fea;
+  optional double field_id=-1 fel;
+  optional double field_id=-1 ffo;
+  optional double field_id=-1 ffs;
+  optional double field_id=-1 fiao;
+  optional double field_id=-1 finaco;
+  optional double field_id=-1 finao;
+  optional double field_id=-1 fincf;
+  optional double field_id=-1 finch;
+  optional double field_id=-1 findlc;
+  optional double field_id=-1 findlt;
+  optional double field_id=-1 finivst;
+  optional double field_id=-1 finlco;
+  optional double field_id=-1 finlto;
+  optional double field_id=-1 finnp;
+  optional double field_id=-1 finrecc;
+  optional double field_id=-1 finreclt;
+  optional double field_id=-1 finrev;
+  optional double field_id=-1 finxint;
+  optional double field_id=-1 finxopr;
+  optional double field_id=-1 fopo;
+  optional double field_id=-1 fopox;
+  optional double field_id=-1 fopt;
+  optional double field_id=-1 fsrco;
+  optional double field_id=-1 fsrct;
+  optional double field_id=-1 fuseo;
+  optional double field_id=-1 fuset;
+  optional double field_id=-1 gbbl;
+  optional double field_id=-1 gdwl;
+  optional double field_id=-1 gdwlam;
+  optional double field_id=-1 gdwlia;
+  optional double field_id=-1 gdwlid;
+  optional double field_id=-1 gdwlieps;
+  optional double field_id=-1 gdwlip;
+  optional double field_id=-1 geqrv;
+  optional double field_id=-1 gla;
+  optional double field_id=-1 glcea;
+  optional double field_id=-1 glced;
+  optional double field_id=-1 glceeps;
+  optional double field_id=-1 glcep;
+  optional double field_id=-1 gld;
+  optional double field_id=-1 gleps;
+  optional double field_id=-1 gliv;
+  optional double field_id=-1 glp;
+  optional double field_id=-1 govgr;
+  optional double field_id=-1 govtown;
+  optional double field_id=-1 gp;
+  optional double field_id=-1 gphbl;
+  optional double field_id=-1 gplbl;
+  optional double field_id=-1 gpobl;
+  optional double field_id=-1 gprbl;
+  optional double field_id=-1 gptbl;
+  optional double field_id=-1 gwo;
+  optional double field_id=-1 hedgegl;
+  optional double field_id=-1 iaeq;
+  optional double field_id=-1 iaeqci;
+  optional double field_id=-1 iaeqmi;
+  optional double field_id=-1 iafici;
+  optional double field_id=-1 iafxi;
+  optional double field_id=-1 iafxmi;
+  optional double field_id=-1 iali;
+  optional double field_id=-1 ialoi;
+  optional double field_id=-1 ialti;
+  optional double field_id=-1 iamli;
+  optional double field_id=-1 iaoi;
+  optional double field_id=-1 iapli;
+  optional double field_id=-1 iarei;
+  optional double field_id=-1 iasci;
+  optional double field_id=-1 iasmi;
+  optional double field_id=-1 iassi;
+  optional double field_id=-1 iasti;
+  optional double field_id=-1 iatci;
+  optional double field_id=-1 iati;
+  optional double field_id=-1 iatmi;
+  optional double field_id=-1 iaui;
+  optional double field_id=-1 ib;
+  optional double field_id=-1 ibadj;
+  optional double field_id=-1 ibbl;
+  optional double field_id=-1 ibc;
+  optional double field_id=-1 ibcom;
+  optional double field_id=-1 ibki;
+  optional double field_id=-1 ibmii;
+  optional double field_id=-1 icapt;
+  optional double field_id=-1 idiis;
+  optional double field_id=-1 idilb;
+  optional double field_id=-1 idilc;
+  optional double field_id=-1 idis;
+  optional double field_id=-1 idist;
+  optional double field_id=-1 idit;
+  optional double field_id=-1 idits;
+  optional double field_id=-1 iire;
+  optional double field_id=-1 initb;
+  optional double field_id=-1 intan;
+  optional double field_id=-1 intano;
+  optional double field_id=-1 intc;
+  optional double field_id=-1 intpn;
+  optional double field_id=-1 invch;
+  optional double field_id=-1 invfg;
+  optional double field_id=-1 invo;
+  optional double field_id=-1 invofs;
+  optional double field_id=-1 invreh;
+  optional double field_id=-1 invrei;
+  optional double field_id=-1 invres;
+  optional double field_id=-1 invrm;
+  optional double field_id=-1 invt;
+  optional double field_id=-1 invwip;
+  optional double field_id=-1 iobd;
+  optional double field_id=-1 ioi;
+  optional double field_id=-1 iore;
+  optional double field_id=-1 ip;
+  optional double field_id=-1 ipabl;
+  optional double field_id=-1 ipc;
+  optional double field_id=-1 iphbl;
+  optional double field_id=-1 iplbl;
+  optional double field_id=-1 ipobl;
+  optional double field_id=-1 iptbl;
+  optional double field_id=-1 ipti;
+  optional double field_id=-1 ipv;
+  optional double field_id=-1 irei;
+  optional double field_id=-1 irent;
+  optional double field_id=-1 irii;
+  optional double field_id=-1 irli;
+  optional double field_id=-1 irnli;
+  optional double field_id=-1 irsi;
+  optional double field_id=-1 iseq;
+  optional double field_id=-1 iseqc;
+  optional double field_id=-1 iseqm;
+  optional double field_id=-1 isfi;
+  optional double field_id=-1 isfxc;
+  optional double field_id=-1 isfxm;
+  optional double field_id=-1 isgr;
+  optional double field_id=-1 isgt;
+  optional double field_id=-1 isgu;
+  optional double field_id=-1 islg;
+  optional double field_id=-1 islgc;
+  optional double field_id=-1 islgm;
+  optional double field_id=-1 islt;
+  optional double field_id=-1 isng;
+  optional double field_id=-1 isngc;
+  optional double field_id=-1 isngm;
+  optional double field_id=-1 isotc;
+  optional double field_id=-1 isoth;
+  optional double field_id=-1 isotm;
+  optional double field_id=-1 issc;
+  optional double field_id=-1 issm;
+  optional double field_id=-1 issu;
+  optional double field_id=-1 ist;
+  optional double field_id=-1 istc;
+  optional double field_id=-1 istm;
+  optional double field_id=-1 isut;
+  optional double field_id=-1 itcb;
+  optional double field_id=-1 itcc;
+  optional double field_id=-1 itci;
+  optional double field_id=-1 ivaco;
+  optional double field_id=-1 ivaeq;
+  optional double field_id=-1 ivao;
+  optional double field_id=-1 ivch;
+  optional double field_id=-1 ivgod;
+  optional double field_id=-1 ivi;
+  optional double field_id=-1 ivncf;
+  optional double field_id=-1 ivpt;
+  optional double field_id=-1 ivst;
+  optional double field_id=-1 ivstch;
+  optional double field_id=-1 lcabg;
+  optional double field_id=-1 lcacl;
+  optional double field_id=-1 lcacr;
+  optional double field_id=-1 lcag;
+  optional double field_id=-1 lcal;
+  optional double field_id=-1 lcalt;
+  optional double field_id=-1 lcam;
+  optional double field_id=-1 lcao;
+  optional double field_id=-1 lcast;
+  optional double field_id=-1 lcat;
+  optional double field_id=-1 lco;
+  optional double field_id=-1 lcox;
+  optional double field_id=-1 lcoxar;
+  optional double field_id=-1 lcoxdr;
+  optional double field_id=-1 lct;
+  optional double field_id=-1 lcuacu;
+  optional double field_id=-1 li;
+  optional double field_id=-1 lif;
+  optional double field_id=-1 lifr;
+  optional double field_id=-1 lifrp;
+  optional double field_id=-1 lloml;
+  optional double field_id=-1 lloo;
+  optional double field_id=-1 llot;
+  optional double field_id=-1 llrci;
+  optional double field_id=-1 llrcr;
+  optional double field_id=-1 llwoci;
+  optional double field_id=-1 llwocr;
+  optional double field_id=-1 lno;
+  optional double field_id=-1 lo;
+  optional double field_id=-1 lol2;
+  optional double field_id=-1 loxdr;
+  optional double field_id=-1 lqpl1;
+  optional double field_id=-1 lrv;
+  optional double field_id=-1 ls;
+  optional double field_id=-1 lse;
+  optional double field_id=-1 lst;
+  optional double field_id=-1 lt;
+  optional double field_id=-1 lul3;
+  optional double field_id=-1 mib;
+  optional double field_id=-1 mibn;
+  optional double field_id=-1 mibt;
+  optional double field_id=-1 mii;
+  optional double field_id=-1 mrc1;
+  optional double field_id=-1 mrc2;
+  optional double field_id=-1 mrc3;
+  optional double field_id=-1 mrc4;
+  optional double field_id=-1 mrc5;
+  optional double field_id=-1 mrct;
+  optional double field_id=-1 mrcta;
+  optional double field_id=-1 msa;
+  optional double field_id=-1 msvrv;
+  optional double field_id=-1 mtl;
+  optional double field_id=-1 nat;
+  optional double field_id=-1 nco;
+  optional double field_id=-1 nfsr;
+  optional double field_id=-1 ni;
+  optional double field_id=-1 niadj;
+  optional double field_id=-1 nieci;
+  optional double field_id=-1 niint;
+  optional double field_id=-1 niintpfc;
+  optional double field_id=-1 niintpfp;
+  optional double field_id=-1 niit;
+  optional double field_id=-1 nim;
+  optional double field_id=-1 nio;
+  optional double field_id=-1 nipfc;
+  optional double field_id=-1 nipfp;
+  optional double field_id=-1 nit;
+  optional double field_id=-1 nits;
+  optional double field_id=-1 nopi;
+  optional double field_id=-1 nopio;
+  optional double field_id=-1 np;
+  optional double field_id=-1 npanl;
+  optional double field_id=-1 npaore;
+  optional double field_id=-1 nparl;
+  optional double field_id=-1 npat;
+  optional double field_id=-1 nrtxt;
+  optional double field_id=-1 nrtxtd;
+  optional double field_id=-1 nrtxteps;
+  optional double field_id=-1 oancf;
+  optional double field_id=-1 ob;
+  optional double field_id=-1 oiadp;
+  optional double field_id=-1 oibdp;
+  optional double field_id=-1 opeps;
+  optional double field_id=-1 opili;
+  optional double field_id=-1 opincar;
+  optional double field_id=-1 opini;
+  optional double field_id=-1 opioi;
+  optional double field_id=-1 opiri;
+  optional double field_id=-1 opiti;
+  optional double field_id=-1 oprepsx;
+  optional double field_id=-1 optca;
+  optional double field_id=-1 optdr;
+  optional double field_id=-1 optex;
+  optional double field_id=-1 optexd;
+  optional double field_id=-1 optfvgr;
+  optional double field_id=-1 optgr;
+  optional double field_id=-1 optlife;
+  optional double field_id=-1 optosby;
+  optional double field_id=-1 optosey;
+  optional double field_id=-1 optprcby;
+  optional double field_id=-1 optprcca;
+  optional double field_id=-1 optprcex;
+  optional double field_id=-1 optprcey;
+  optional double field_id=-1 optprcgr;
+  optional double field_id=-1 optprcwa;
+  optional double field_id=-1 optrfr;
+  optional double field_id=-1 optvol;
+  optional double field_id=-1 palr;
+  optional double field_id=-1 panlr;
+  optional double field_id=-1 patr;
+  optional double field_id=-1 pcl;
+  optional double field_id=-1 pclr;
+  optional double field_id=-1 pcnlr;
+  optional double field_id=-1 pctr;
+  optional double field_id=-1 pdvc;
+  optional double field_id=-1 pi;
+  optional double field_id=-1 pidom;
+  optional double field_id=-1 pifo;
+  optional double field_id=-1 pll;
+  optional double field_id=-1 pltbl;
+  optional double field_id=-1 pnca;
+  optional double field_id=-1 pncad;
+  optional double field_id=-1 pncaeps;
+  optional double field_id=-1 pncia;
+  optional double field_id=-1 pncid;
+  optional double field_id=-1 pncieps;
+  optional double field_id=-1 pncip;
+  optional double field_id=-1 pncwia;
+  optional double field_id=-1 pncwid;
+  optional double field_id=-1 pncwieps;
+  optional double field_id=-1 pncwip;
+  optional double field_id=-1 pnlbl;
+  optional double field_id=-1 pnli;
+  optional double field_id=-1 pnrsho;
+  optional double field_id=-1 pobl;
+  optional double field_id=-1 ppcbl;
+  optional double field_id=-1 ppegt;
+  optional double field_id=-1 ppenb;
+  optional double field_id=-1 ppenc;
+  optional double field_id=-1 ppenli;
+  optional double field_id=-1 ppenls;
+  optional double field_id=-1 ppenme;
+  optional double field_id=-1 ppennr;
+  optional double field_id=-1 ppeno;
+  optional double field_id=-1 ppent;
+  optional double field_id=-1 ppevbb;
+  optional double field_id=-1 ppeveb;
+  optional double field_id=-1 ppevo;
+  optional double field_id=-1 ppevr;
+  optional double field_id=-1 pppabl;
+  optional double field_id=-1 ppphbl;
+  optional double field_id=-1 pppobl;
+  optional double field_id=-1 ppptbl;
+  optional double field_id=-1 prc;
+  optional double field_id=-1 prca;
+  optional double field_id=-1 prcad;
+  optional double field_id=-1 prcaeps;
+  optional double field_id=-1 prebl;
+  optional double field_id=-1 pri;
+  optional double field_id=-1 prodv;
+  optional double field_id=-1 prsho;
+  optional double field_id=-1 prstkc;
+  optional double field_id=-1 prstkcc;
+  optional double field_id=-1 prstkpc;
+  optional double field_id=-1 prvt;
+  optional double field_id=-1 pstk;
+  optional double field_id=-1 pstkc;
+  optional double field_id=-1 pstkl;
+  optional double field_id=-1 pstkn;
+  optional double field_id=-1 pstkr;
+  optional double field_id=-1 pstkrv;
+  optional double field_id=-1 ptbl;
+  optional double field_id=-1 ptran;
+  optional double field_id=-1 pvcl;
+  optional double field_id=-1 pvo;
+  optional double field_id=-1 pvon;
+  optional double field_id=-1 pvpl;
+  optional double field_id=-1 pvt;
+  optional double field_id=-1 pwoi;
+  optional double field_id=-1 radp;
+  optional double field_id=-1 ragr;
+  optional double field_id=-1 rari;
+  optional double field_id=-1 rati;
+  optional double field_id=-1 rca;
+  optional double field_id=-1 rcd;
+  optional double field_id=-1 rceps;
+  optional double field_id=-1 rcl;
+  optional double field_id=-1 rcp;
+  optional double field_id=-1 rdip;
+  optional double field_id=-1 rdipa;
+  optional double field_id=-1 rdipd;
+  optional double field_id=-1 rdipeps;
+  optional double field_id=-1 rdp;
+  optional double field_id=-1 re;
+  optional double field_id=-1 rea;
+  optional double field_id=-1 reajo;
+  optional double field_id=-1 recch;
+  optional double field_id=-1 recco;
+  optional double field_id=-1 recd;
+  optional double field_id=-1 rect;
+  optional double field_id=-1 recta;
+  optional double field_id=-1 rectr;
+  optional double field_id=-1 recub;
+  optional double field_id=-1 ret;
+  optional double field_id=-1 reuna;
+  optional double field_id=-1 reunr;
+  optional double field_id=-1 revt;
+  optional double field_id=-1 ris;
+  optional double field_id=-1 rll;
+  optional double field_id=-1 rlo;
+  optional double field_id=-1 rlp;
+  optional double field_id=-1 rlri;
+  optional double field_id=-1 rlt;
+  optional double field_id=-1 rmum;
+  optional double field_id=-1 rpag;
+  optional double field_id=-1 rra;
+  optional double field_id=-1 rrd;
+  optional double field_id=-1 rreps;
+  optional double field_id=-1 rrp;
+  optional double field_id=-1 rstche;
+  optional double field_id=-1 rstchelt;
+  optional double field_id=-1 rvbci;
+  optional double field_id=-1 rvbpi;
+  optional double field_id=-1 rvbti;
+  optional double field_id=-1 rvdo;
+  optional double field_id=-1 rvdt;
+  optional double field_id=-1 rveqt;
+  optional double field_id=-1 rvlrv;
+  optional double field_id=-1 rvno;
+  optional double field_id=-1 rvnt;
+  optional double field_id=-1 rvri;
+  optional double field_id=-1 rvsi;
+  optional double field_id=-1 rvti;
+  optional double field_id=-1 rvtxr;
+  optional double field_id=-1 rvupi;
+  optional double field_id=-1 rvutx;
+  optional double field_id=-1 saa;
+  optional double field_id=-1 sal;
+  optional double field_id=-1 sale;
+  optional double field_id=-1 salepfc;
+  optional double field_id=-1 salepfp;
+  optional double field_id=-1 sbdc;
+  optional double field_id=-1 sc;
+  optional double field_id=-1 sco;
+  optional double field_id=-1 scstkc;
+  optional double field_id=-1 secu;
+  optional double field_id=-1 seq;
+  optional double field_id=-1 seqo;
+  optional double field_id=-1 seta;
+  optional double field_id=-1 setd;
+  optional double field_id=-1 seteps;
+  optional double field_id=-1 setp;
+  optional double field_id=-1 siv;
+  optional double field_id=-1 spce;
+  optional double field_id=-1 spced;
+  optional double field_id=-1 spceeps;
+  optional double field_id=-1 spi;
+  optional double field_id=-1 spid;
+  optional double field_id=-1 spieps;
+  optional double field_id=-1 spioa;
+  optional double field_id=-1 spiop;
+  optional double field_id=-1 sppe;
+  optional double field_id=-1 sppiv;
+  optional double field_id=-1 spstkc;
+  optional double field_id=-1 sret;
+  optional double field_id=-1 srt;
+  optional double field_id=-1 ssnp;
+  optional double field_id=-1 sstk;
+  optional double field_id=-1 stbo;
+  optional double field_id=-1 stio;
+  optional double field_id=-1 stkco;
+  optional double field_id=-1 stkcpa;
+  optional double field_id=-1 tdc;
+  optional double field_id=-1 tdscd;
+  optional double field_id=-1 tdsce;
+  optional double field_id=-1 tdsg;
+  optional double field_id=-1 tdslg;
+  optional double field_id=-1 tdsmm;
+  optional double field_id=-1 tdsng;
+  optional double field_id=-1 tdso;
+  optional double field_id=-1 tdss;
+  optional double field_id=-1 tdst;
+  optional double field_id=-1 teq;
+  optional double field_id=-1 tf;
+  optional double field_id=-1 tfva;
+  optional double field_id=-1 tfvce;
+  optional double field_id=-1 tfvl;
+  optional double field_id=-1 tie;
+  optional double field_id=-1 tii;
+  optional double field_id=-1 tlcf;
+  optional double field_id=-1 transa;
+  optional double field_id=-1 tsa;
+  optional double field_id=-1 tsafc;
+  optional double field_id=-1 tso;
+  optional double field_id=-1 tstk;
+  optional double field_id=-1 tstkc;
+  optional double field_id=-1 tstkme;
+  optional double field_id=-1 tstkn;
+  optional double field_id=-1 tstkp;
+  optional double field_id=-1 txach;
+  optional double field_id=-1 txbco;
+  optional double field_id=-1 txbcof;
+  optional double field_id=-1 txc;
+  optional double field_id=-1 txdb;
+  optional double field_id=-1 txdba;
+  optional double field_id=-1 txdbca;
+  optional double field_id=-1 txdbcl;
+  optional double field_id=-1 txdc;
+  optional double field_id=-1 txdfed;
+  optional double field_id=-1 txdfo;
+  optional double field_id=-1 txdi;
+  optional double field_id=-1 txditc;
+  optional double field_id=-1 txds;
+  optional double field_id=-1 txeqa;
+  optional double field_id=-1 txeqii;
+  optional double field_id=-1 txfed;
+  optional double field_id=-1 txfo;
+  optional double field_id=-1 txndb;
+  optional double field_id=-1 txndba;
+  optional double field_id=-1 txndbl;
+  optional double field_id=-1 txndbr;
+  optional double field_id=-1 txo;
+  optional double field_id=-1 txp;
+  optional double field_id=-1 txpd;
+  optional double field_id=-1 txr;
+  optional double field_id=-1 txs;
+  optional double field_id=-1 txt;
+  optional double field_id=-1 txtubadjust;
+  optional double field_id=-1 txtubbegin;
+  optional double field_id=-1 txtubend;
+  optional double field_id=-1 txtubmax;
+  optional double field_id=-1 txtubmin;
+  optional double field_id=-1 txtubposdec;
+  optional double field_id=-1 txtubposinc;
+  optional double field_id=-1 txtubpospdec;
+  optional double field_id=-1 txtubpospinc;
+  optional double field_id=-1 txtubsettle;
+  optional double field_id=-1 txtubsoflimit;
+  optional double field_id=-1 txtubtxtr;
+  optional double field_id=-1 txtubxintbs;
+  optional double field_id=-1 txtubxintis;
+  optional double field_id=-1 txva;
+  optional double field_id=-1 txw;
+  optional double field_id=-1 uaoloch;
+  optional double field_id=-1 uaox;
+  optional double field_id=-1 uapt;
+  optional double field_id=-1 ucaps;
+  optional double field_id=-1 uccons;
+  optional double field_id=-1 uceq;
+  optional double field_id=-1 ucustad;
+  optional double field_id=-1 udcopres;
+  optional double field_id=-1 udd;
+  optional double field_id=-1 udfcc;
+  optional double field_id=-1 udmb;
+  optional double field_id=-1 udolt;
+  optional double field_id=-1 udpco;
+  optional double field_id=-1 udpfa;
+  optional double field_id=-1 udvp;
+  optional double field_id=-1 ufretsd;
+  optional double field_id=-1 ugi;
+  optional double field_id=-1 ui;
+  optional double field_id=-1 uinvt;
+  optional double field_id=-1 ulcm;
+  optional double field_id=-1 ulco;
+  optional double field_id=-1 uniami;
+  optional double field_id=-1 unl;
+  optional double field_id=-1 unnp;
+  optional double field_id=-1 unnpl;
+  optional double field_id=-1 unopinc;
+  optional double field_id=-1 unwcc;
+  optional double field_id=-1 uois;
+  optional double field_id=-1 uopi;
+  optional double field_id=-1 uopres;
+  optional double field_id=-1 updvp;
+  optional double field_id=-1 upmcstk;
+  optional double field_id=-1 upmpf;
+  optional double field_id=-1 upmpfs;
+  optional double field_id=-1 upmsubp;
+  optional double field_id=-1 upstk;
+  optional double field_id=-1 upstkc;
+  optional double field_id=-1 upstksf;
+  optional double field_id=-1 urect;
+  optional double field_id=-1 urectr;
+  optional double field_id=-1 urevub;
+  optional double field_id=-1 uspi;
+  optional double field_id=-1 ustdnc;
+  optional double field_id=-1 usubdvp;
+  optional double field_id=-1 usubpstk;
+  optional double field_id=-1 utfdoc;
+  optional double field_id=-1 utfosc;
+  optional double field_id=-1 utme;
+  optional double field_id=-1 utxfed;
+  optional double field_id=-1 uwkcapc;
+  optional double field_id=-1 uxinst;
+  optional double field_id=-1 uxintd;
+  optional double field_id=-1 vpac;
+  optional double field_id=-1 vpo;
+  optional double field_id=-1 wcap;
+  optional double field_id=-1 wcapc;
+  optional double field_id=-1 wcapch;
+  optional double field_id=-1 wda;
+  optional double field_id=-1 wdd;
+  optional double field_id=-1 wdeps;
+  optional double field_id=-1 wdp;
+  optional double field_id=-1 xacc;
+  optional double field_id=-1 xad;
+  optional double field_id=-1 xago;
+  optional double field_id=-1 xagt;
+  optional double field_id=-1 xcom;
+  optional double field_id=-1 xcomi;
+  optional double field_id=-1 xdepl;
+  optional double field_id=-1 xdp;
+  optional double field_id=-1 xdvre;
+  optional double field_id=-1 xeqo;
+  optional double field_id=-1 xi;
+  optional double field_id=-1 xido;
+  optional double field_id=-1 xidoc;
+  optional double field_id=-1 xindb;
+  optional double field_id=-1 xindc;
+  optional double field_id=-1 xins;
+  optional double field_id=-1 xinst;
+  optional double field_id=-1 xint;
+  optional double field_id=-1 xintd;
+  optional double field_id=-1 xintopt;
+  optional double field_id=-1 xivi;
+  optional double field_id=-1 xivre;
+  optional double field_id=-1 xlr;
+  optional double field_id=-1 xnbi;
+  optional double field_id=-1 xnf;
+  optional double field_id=-1 xnins;
+  optional double field_id=-1 xnitb;
+  optional double field_id=-1 xobd;
+  optional double field_id=-1 xoi;
+  optional double field_id=-1 xopr;
+  optional double field_id=-1 xoprar;
+  optional double field_id=-1 xoptd;
+  optional double field_id=-1 xopteps;
+  optional double field_id=-1 xore;
+  optional double field_id=-1 xpp;
+  optional double field_id=-1 xpr;
+  optional double field_id=-1 xrd;
+  optional double field_id=-1 xrdp;
+  optional double field_id=-1 xrent;
+  optional double field_id=-1 xs;
+  optional double field_id=-1 xsga;
+  optional double field_id=-1 xstf;
+  optional double field_id=-1 xstfo;
+  optional double field_id=-1 xstfws;
+  optional double field_id=-1 xt;
+  optional double field_id=-1 xuw;
+  optional double field_id=-1 xuwli;
+  optional double field_id=-1 xuwnli;
+  optional double field_id=-1 xuwoi;
+  optional double field_id=-1 xuwrei;
+  optional double field_id=-1 xuwti;
+  optional binary field_id=-1 iid (String);
+  optional int32 field_id=-1 exchg;
+  optional binary field_id=-1 cik (String);
+  optional binary field_id=-1 costat (String);
+  optional binary field_id=-1 fic (String);
+  optional int32 field_id=-1 naicsh;
+  optional int32 field_id=-1 sich;
+  optional double field_id=-1 cshtr_c;
+  optional double field_id=-1 dvpsp_c;
+  optional double field_id=-1 dvpsx_c;
+  optional double field_id=-1 prcc_c;
+  optional double field_id=-1 prch_c;
+  optional double field_id=-1 prcl_c;
+  optional double field_id=-1 adjex_c;
+  optional double field_id=-1 cshtr_f;
+  optional double field_id=-1 dvpsp_f;
+  optional double field_id=-1 dvpsx_f;
+  optional double field_id=-1 mkvalt;
+  optional double field_id=-1 prcc_f;
+  optional double field_id=-1 prch_f;
+  optional double field_id=-1 prcl_f;
+  optional double field_id=-1 adjex_f;
+  optional int32 field_id=-1 rank;
+  optional binary field_id=-1 au (String);
+  optional binary field_id=-1 auop (String);
+  optional binary field_id=-1 auopic (String);
+  optional binary field_id=-1 ceoso (String);
+  optional binary field_id=-1 cfoso (String);
+}
+
+
+First 5 Rows:
+    gvkey    datadate   fyear indfmt consol popsrc   datafmt     tic      cusip                       conm acctchg acctstd acqmeth  adrr  ajex  ajp  bspr compst curcd curncd  currtr  curuscn final  fyr  ismod  ltcm   ogm  pddur  scf   src stalt  udpl  upd apdedate fdate pdate  acchg  acco  accrt  acdo    aco  acodo  acominc   acox  acoxar  acqao  acqcshi  acqgdwl  acqic  acqintan  acqinvt  acqlntal  acqniintc  acqppe  acqsc    act  adpac  aedi  afudcc  afudci  aldo     am  amc  amdc  amgw  ano     ao  aocidergl  aociother  aocipen  aocisecgl  aodo  aol2  aoloch    aox     ap  apalch  apb  apc  apofs  aqa  aqc  aqd  aqeps  aqi  aqp  aqpl1  aqs  arb  arc  arce  arced  arceeps  artfs      at  aul3  autxr  balr  banlr  bast  bastr  batr  bcef  bclr  bcltbl  bcnlr  bcrbl  bct  bctbl  bctr  billexce  bkvlps  bltbl  ca  capr1  capr2  capr3   caps  capsft   capx  capxv  cb  cbi  cdpac  cdvc  ceiexbill    ceq   ceql   ceqt  cfbd  cfere  cfo  cfpdo  cga  cgri  cgti  cgui     ch    che  chech  chs  ci  cibegni  cicurr  cidergl  cimii  ciother  cipen  cisecgl  citotal  cld2  cld3  cld4  cld5  clfc  clfx  clg  clis  cll  cllc  clo  clrll  clt  cmp  cnltbl   cogs  cpcbl  cpdoi  cpnli  cppbl  cprei  crv  crvnli  cshfd  cshi   csho  cshpri  cshr  cshrc  cshrp  cshrso  cshrt  cshrw   cstk  cstkcv  cstke  dbi   dc  dclo  dcom  dcpstk  dcs  dcvsr  dcvsub  dcvt   dd    dd1    dd2  dd3  dd4  dd5  depc  derac  deralt  derhedgl  derlc  derllt  dfpac  dfs  dfxa  diladj  dilavx    dlc  dlcch  dltis  dlto  dltp   dltr  dltsub   dltt   dm     dn   do  donr     dp  dpacb  dpacc  dpacli  dpacls  dpacme  dpacnr  dpaco  dpacre  dpact    dpc  dpdc  dpltb  dpret  dpsc  dpstb  dptb  dptc  dptic  dpvieb  dpvio  dpvir  drc  drci  drlt   ds  dt  dtea  dted  dteeps  dtep  dudd   dv  dvc  dvdnp  dvintf  dvp  dvpa  dvpd  dvpdp  dvpibb  dvrpiv  dvrre  dvsco  dvt   dxd2  dxd3  dxd4  dxd5  ea   ebit  ebitda  eiea  emol    emp  epsfi  epsfx  epspi  epspx  esopct  esopdlt  esopnr  esopr  esopt  esub  esubc  excadj  exre  fatb  fatc  fatd  fate  fatl  fatn  fato  fatp  fca  fdfr  fea  fel  ffo  ffs  fiao  finaco  finao  fincf  finch  findlc  findlt  finivst  finlco  finlto  finnp  finrecc  finreclt  finrev  finxint  finxopr  fopo  fopox  fopt  fsrco  fsrct  fuseo  fuset  gbbl   gdwl  gdwlam  gdwlia  gdwlid  gdwlieps  gdwlip  geqrv  gla  glcea  glced  glceeps  glcep  gld  gleps  gliv  glp  govgr  govtown     gp  gphbl  gplbl  gpobl  gprbl  gptbl  gwo  hedgegl  iaeq  iaeqci  iaeqmi  iafici  iafxi  iafxmi  iali  ialoi  ialti  iamli  iaoi  iapli  iarei  iasci  iasmi  iassi  iasti  iatci  iati  iatmi  iaui     ib  ibadj  ibbl    ibc  ibcom  ibki  ibmii  icapt  idiis  idilb  idilc  idis  idist  idit  idits  iire  initb  intan  intano  intc  intpn  invch  invfg  invo  invofs  invreh  invrei  invres  invrm   invt  invwip  iobd  ioi  iore  ip  ipabl  ipc  iphbl  iplbl  ipobl  iptbl  ipti  ipv  irei  irent  irii  irli  irnli  irsi  iseq  iseqc  iseqm  isfi  isfxc  isfxm  isgr  isgt  isgu  islg  islgc  islgm  islt  isng  isngc  isngm  isotc  isoth  isotm  issc  issm  issu  ist  istc  istm  isut  itcb  itcc  itci  ivaco  ivaeq   ivao  ivch  ivgod  ivi  ivncf  ivpt  ivst  ivstch  lcabg  lcacl  lcacr  lcag  lcal  lcalt  lcam  lcao  lcast  lcat    lco   lcox  lcoxar  lcoxdr    lct  lcuacu  li  lif  lifr  lifrp  lloml  lloo  llot  llrci  llrcr  llwoci  llwocr  lno   lo  lol2  loxdr  lqpl1  lrv  ls     lse  lst     lt  lul3  mib  mibn  mibt  mii   mrc1   mrc2   mrc3   mrc4   mrc5   mrct  mrcta  msa  msvrv  mtl  nat  nco  nfsr     ni  niadj  nieci  niint  niintpfc  niintpfp  niit  nim  nio  nipfc  nipfp  nit  nits   nopi  nopio   np  npanl  npaore  nparl  npat  nrtxt  nrtxtd  nrtxteps  oancf  ob  oiadp  oibdp  opeps  opili  opincar  opini  opioi  opiri  opiti  oprepsx  optca  optdr  optex  optexd  optfvgr  optgr  optlife  optosby  optosey  optprcby  optprcca  optprcex  optprcey  optprcgr  optprcwa  optrfr  optvol  palr  panlr  patr  pcl  pclr  pcnlr  pctr  pdvc     pi  pidom  pifo  pll  pltbl  pnca  pncad  pncaeps  pncia  pncid  pncieps  pncip  pncwia  pncwid  pncwieps  pncwip  pnlbl  pnli  pnrsho  pobl  ppcbl  ppegt  ppenb  ppenc  ppenli  ppenls  ppenme  ppennr  ppeno  ppent  ppevbb  ppeveb  ppevo  ppevr  pppabl  ppphbl  pppobl  ppptbl  prc  prca  prcad  prcaeps  prebl  pri  prodv  prsho  prstkc  prstkcc  prstkpc  prvt  pstk  pstkc  pstkl  pstkn  pstkr  pstkrv  ptbl  ptran  pvcl  pvo  pvon  pvpl  pvt  pwoi  radp  ragr  rari  rati  rca  rcd  rceps  rcl  rcp  rdip  rdipa  rdipd  rdipeps  rdp     re    rea  reajo  recch  recco   recd   rect  recta  rectr  recub  ret  reuna  reunr    revt  ris  rll  rlo  rlp  rlri  rlt  rmum  rpag  rra  rrd  rreps  rrp  rstche  rstchelt  rvbci  rvbpi  rvbti  rvdo  rvdt  rveqt  rvlrv  rvno  rvnt  rvri  rvsi  rvti  rvtxr  rvupi  rvutx  saa  sal    sale  salepfc  salepfp  sbdc  sc  sco  scstkc  secu    seq  seqo  seta  setd  seteps  setp    siv  spce  spced  spceeps   spi  spid  spieps  spioa  spiop   sppe  sppiv  spstkc  sret  srt  ssnp   sstk  stbo  stio  stkco  stkcpa  tdc  tdscd  tdsce  tdsg  tdslg  tdsmm  tdsng  tdso  tdss  tdst  teq  tf  tfva  tfvce  tfvl  tie  tii   tlcf  transa  tsa  tsafc  tso  tstk  tstkc  tstkme  tstkn  tstkp  txach  txbco  txbcof  txc  txdb  txdba  txdbca  txdbcl  txdc  txdfed  txdfo  txdi  txditc  txds  txeqa  txeqii  txfed  txfo  txndb  txndba  txndbl  txndbr  txo  txp   txpd  txr  txs  txt  txtubadjust  txtubbegin  txtubend  txtubmax  txtubmin  txtubposdec  txtubposinc  txtubpospdec  txtubpospinc  txtubsettle  txtubsoflimit  txtubtxtr  txtubxintbs  txtubxintis  txva  txw  uaoloch  uaox  uapt  ucaps  uccons  uceq  ucustad  udcopres  udd  udfcc  udmb  udolt  udpco  udpfa  udvp  ufretsd  ugi  ui  uinvt  ulcm  ulco  uniami  unl  unnp  unnpl  unopinc  unwcc  uois  uopi  uopres  updvp  upmcstk  upmpf  upmpfs  upmsubp  upstk  upstkc  upstksf  urect  urectr  urevub  uspi  ustdnc  usubdvp  usubpstk  utfdoc  utfosc  utme  utxfed  uwkcapc  uxinst  uxintd  vpac  vpo   wcap  wcapc  wcapch  wda  wdd  wdeps  wdp   xacc    xad  xago  xagt  xcom  xcomi  xdepl  xdp  xdvre  xeqo   xi  xido  xidoc  xindb  xindc  xins  xinst   xint  xintd  xintopt  xivi  xivre  xlr  xnbi  xnf  xnins  xnitb  xobd  xoi    xopr  xoprar  xoptd  xopteps  xore  xpp    xpr  xrd  xrdp  xrent  xs   xsga  xstf  xstfo  xstfws  xt  xuw  xuwli  xuwnli  xuwoi  xuwrei  xuwti iid  exchg         cik costat  fic    naicsh    sich    cshtr_c  dvpsp_c  dvpsx_c  prcc_c  prch_c  prcl_c  adjex_c    cshtr_f  dvpsp_f  dvpsx_f  mkvalt  prcc_f  prch_f  prcl_f  adjex_f  rank    au  auop auopic ceoso cfoso
+0  011946  1990-05-31  1989.0   INDL      C      D  SUMM_STD  GCCC.1  369386107  GENERAL COMPUTER CORP INC    None    None    None   NaN   NaN  NaN  None   None   USD   None     NaN      NaN  None  5.0    NaN  None  None   12.0  NaN  53.0  None  None  3.0     None  None  None    NaN   NaN    NaN   NaN    NaN    NaN      NaN    NaN     NaN    NaN      NaN      NaN    NaN       NaN      NaN       NaN        NaN     NaN    NaN    NaN    NaN   NaN     NaN     NaN   NaN    NaN  NaN   NaN   NaN  NaN    NaN        NaN        NaN      NaN        NaN   NaN   NaN     NaN    NaN    NaN     NaN  NaN  NaN    NaN  NaN  NaN  NaN    NaN  NaN  NaN    NaN  NaN  NaN  NaN   NaN    NaN      NaN    NaN  12.157   NaN    NaN   NaN    NaN   NaN    NaN   NaN   NaN   NaN     NaN    NaN    NaN  NaN    NaN   NaN       NaN     NaN    NaN NaN    NaN    NaN    NaN    NaN     NaN  0.233    NaN NaN  NaN    NaN   NaN        NaN    NaN    NaN    NaN   NaN    NaN  NaN    NaN  NaN   NaN   NaN   NaN    NaN    NaN    NaN  NaN NaN      NaN     NaN      NaN    NaN      NaN    NaN      NaN      NaN   NaN   NaN   NaN   NaN   NaN   NaN  NaN   NaN  NaN   NaN  NaN    NaN  NaN  NaN     NaN  8.448    NaN    NaN    NaN    NaN    NaN  NaN     NaN    NaN   NaN    NaN   1.574   NaN    NaN    NaN     NaN    NaN    NaN    NaN     NaN    NaN  NaN  NaN   NaN   NaN     NaN  NaN    NaN     NaN   NaN  NaN    NaN    NaN  NaN  NaN  NaN   NaN    NaN     NaN       NaN    NaN     NaN    NaN  NaN   NaN     NaN     NaN    NaN    NaN    NaN   NaN   NaN    NaN     NaN  0.378  NaN    NaN  NaN   NaN    NaN    NaN    NaN     NaN     NaN     NaN     NaN    NaN     NaN    NaN    NaN   NaN    NaN    NaN   NaN    NaN   NaN   NaN    NaN     NaN    NaN    NaN  NaN   NaN   NaN  NaN NaN   NaN   NaN     NaN   NaN   NaN  NaN  NaN    NaN     NaN  NaN   NaN   NaN    NaN     NaN     NaN    NaN    NaN  NaN    NaN   NaN   NaN   NaN NaN    NaN     NaN   NaN   NaN    NaN    NaN    NaN  -1.15  -1.15     NaN      NaN     NaN    NaN    NaN   NaN    NaN     NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  NaN   NaN  NaN  NaN  NaN  NaN   NaN     NaN    NaN    NaN    NaN     NaN     NaN      NaN     NaN     NaN    NaN      NaN       NaN     NaN      NaN      NaN   NaN    NaN   NaN    NaN    NaN    NaN    NaN   NaN    NaN     NaN     NaN     NaN       NaN     NaN    NaN  NaN    NaN    NaN      NaN    NaN  NaN    NaN   NaN  NaN    NaN      NaN    NaN    NaN    NaN    NaN    NaN    NaN  NaN      NaN   NaN     NaN     NaN     NaN    NaN     NaN   NaN    NaN    NaN    NaN   NaN    NaN    NaN    NaN    NaN    NaN    NaN    NaN   NaN    NaN   NaN -1.802    NaN   NaN    NaN    NaN   NaN    NaN    NaN    NaN    NaN    NaN   NaN    NaN   NaN    NaN   NaN    NaN    NaN     NaN   NaN    NaN    NaN    NaN   NaN     NaN     NaN     NaN     NaN    NaN    NaN     NaN   NaN  NaN   NaN NaN    NaN  NaN    NaN    NaN    NaN    NaN   NaN  NaN   NaN    NaN   NaN   NaN    NaN   NaN   NaN    NaN    NaN   NaN    NaN    NaN   NaN   NaN   NaN   NaN    NaN    NaN   NaN   NaN    NaN    NaN    NaN    NaN    NaN   NaN   NaN   NaN  NaN   NaN   NaN   NaN   NaN   NaN   NaN    NaN    NaN    NaN   NaN    NaN  NaN    NaN   NaN   NaN     NaN    NaN    NaN    NaN   NaN   NaN    NaN   NaN   NaN    NaN   NaN    NaN    NaN     NaN     NaN    NaN     NaN NaN  NaN   NaN    NaN    NaN   NaN   NaN    NaN    NaN     NaN     NaN  NaN  NaN   NaN    NaN    NaN  NaN NaN     NaN  NaN    NaN   NaN  NaN   NaN   NaN  0.0    NaN    NaN    NaN    NaN    NaN    NaN    NaN  NaN    NaN  NaN  NaN  NaN   NaN -1.802    NaN    NaN    NaN       NaN       NaN   NaN  NaN  NaN    NaN    NaN  NaN   NaN  0.224    NaN  NaN    NaN     NaN    NaN   NaN    NaN     NaN       NaN    NaN NaN    NaN    NaN    NaN    NaN      NaN    NaN    NaN    NaN    NaN      NaN    NaN    NaN    NaN     NaN      NaN    NaN      NaN      NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN     NaN     NaN   NaN    NaN   NaN  NaN   NaN    NaN   NaN   NaN -1.802    NaN   NaN  NaN    NaN   NaN    NaN      NaN    NaN    NaN      NaN    NaN     NaN     NaN       NaN     NaN    NaN   NaN     NaN   NaN    NaN    NaN    NaN    NaN     NaN     NaN     NaN     NaN    NaN    NaN     NaN     NaN    NaN    NaN     NaN     NaN     NaN     NaN  NaN   NaN    NaN      NaN    NaN  NaN    NaN    NaN     NaN      NaN      NaN   NaN   NaN    NaN    NaN    NaN    NaN     NaN   NaN    NaN   NaN  NaN   NaN   NaN  NaN   NaN   NaN   NaN   NaN   NaN  NaN  NaN    NaN  NaN  NaN   NaN    NaN    NaN      NaN  NaN    NaN    NaN    NaN    NaN    NaN    NaN    NaN    NaN    NaN    NaN  NaN -3.288    NaN     NaN  NaN  NaN  NaN  NaN   NaN  NaN   NaN   NaN  NaN  NaN    NaN  NaN     NaN       NaN    NaN    NaN    NaN   NaN   NaN    NaN    NaN   NaN   NaN   NaN   NaN   NaN    NaN    NaN    NaN  NaN  NaN  11.926      NaN      NaN   NaN NaN  NaN     NaN   NaN  4.345   NaN   NaN   NaN     NaN   NaN    NaN   NaN    NaN      NaN   NaN   NaN     NaN    NaN    NaN    NaN    NaN     NaN   NaN  NaN   NaN    NaN   NaN   NaN    NaN     NaN  NaN    NaN    NaN   NaN    NaN    NaN    NaN   NaN   NaN   NaN  NaN NaN   NaN    NaN   NaN  NaN  NaN    NaN     NaN  NaN    NaN  NaN   NaN    NaN     NaN    NaN    NaN    NaN    NaN     NaN  NaN   NaN    NaN     NaN     NaN   NaN     NaN    NaN   NaN     NaN   NaN    NaN     NaN    NaN   NaN    NaN     NaN     NaN     NaN  NaN  NaN    NaN  NaN  NaN  0.0          NaN         NaN       NaN       NaN       NaN          NaN          NaN           NaN           NaN          NaN            NaN        NaN          NaN          NaN   NaN  NaN      NaN   NaN   NaN    NaN     NaN   NaN      NaN       NaN  NaN    NaN   NaN    NaN    NaN    NaN   NaN      NaN  NaN NaN    NaN   NaN   NaN     NaN  NaN   NaN    NaN      NaN    NaN   NaN   NaN     NaN    NaN      NaN    NaN     NaN      NaN    NaN     NaN      NaN    NaN     NaN     NaN   NaN     NaN      NaN       NaN     NaN     NaN   NaN     NaN      NaN     NaN     NaN   NaN  NaN    NaN    NaN     NaN  NaN  NaN    NaN  NaN    NaN    NaN   NaN   NaN   NaN    NaN    NaN  NaN    NaN   NaN  NaN   0.0    NaN    NaN    NaN   NaN    NaN  0.610    NaN      NaN   NaN    NaN  NaN   NaN  NaN    NaN    NaN   NaN  NaN     NaN     NaN    NaN      NaN   NaN  NaN    NaN  NaN   NaN    NaN NaN  4.894   NaN    NaN     NaN NaN  NaN    NaN     NaN    NaN     NaN    NaN  01   14.0  0000788306      I  USA  541512.0  7373.0   564900.0      0.0      0.0   4.125    5.50   3.500      1.0   518000.0      0.0      0.0     NaN    4.50    4.75    3.50      1.0   NaN  None  None   None  None  None
+1  011946  1991-05-31  1990.0   INDL      C      D       STD  GCCC.1  369386107  GENERAL COMPUTER CORP INC    None      DS    None   NaN   1.0  1.0  None   None   USD    USD     1.0      NaN     Y  5.0    1.0  None  None   12.0  7.0  53.0  None  None  3.0     None  None  None    0.0   NaN    NaN   NaN  0.418    NaN      NaN  0.418     NaN    NaN      NaN      NaN    NaN       NaN      NaN       NaN        NaN     NaN    NaN  5.324    NaN   NaN     NaN     NaN   NaN    NaN  NaN   NaN   NaN  NaN  2.834        NaN        NaN      NaN        NaN   NaN   NaN   0.006  2.834  0.864  -0.406  NaN  NaN    NaN  NaN  0.0  NaN    NaN  0.0  NaN    NaN  0.0  NaN  NaN   NaN    NaN      NaN    NaN  10.881   NaN    NaN   NaN    NaN   NaN    NaN   NaN   NaN   NaN     NaN    NaN    NaN  NaN    NaN   NaN       NaN  3.2179    NaN NaN    NaN    NaN    NaN  7.476     NaN  0.371  0.371 NaN  NaN    NaN   NaN        NaN  5.065  5.065  3.858   NaN    NaN  NaN    NaN  NaN   NaN   NaN   NaN  0.048  0.048 -0.251  NaN NaN      NaN     NaN      NaN    NaN      NaN    NaN      NaN      NaN   0.0   0.0   0.0   0.0   NaN   NaN  NaN   NaN  NaN   NaN  NaN    NaN  NaN  NaN     NaN  7.031    NaN    NaN    NaN    NaN    NaN  NaN     NaN    NaN   NaN  1.574   1.586   1.0    0.0    0.0   0.203  0.433  0.230  0.157     0.1    0.0  NaN  0.0   0.0   NaN     0.0  NaN    0.0     0.0   0.0  0.0  3.952  0.012  0.0  0.0  0.0   NaN    NaN     NaN       NaN    NaN     NaN    NaN  NaN   NaN     NaN     NaN  4.152    NaN    0.0   0.0   NaN  1.106     NaN  0.012  NaN  0.012  0.0   NaN  0.439    NaN    NaN     NaN     NaN     NaN     NaN    NaN     NaN  2.378  0.713   NaN    NaN    NaN   NaN    NaN   NaN   NaN    NaN     NaN    NaN    NaN  NaN   NaN   NaN  0.0 NaN   NaN   NaN     NaN   NaN   0.0  0.0  0.0    NaN     NaN  0.0   0.0   NaN    NaN     NaN     NaN    NaN    NaN  0.0  0.012   0.0   0.0   0.0 NaN  0.859   1.298   NaN   NaN  0.167   0.15   0.15   0.15   0.15     0.0      0.0     NaN    NaN    0.0   0.0    0.0     NaN   0.0   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  NaN   NaN  NaN  NaN  NaN  NaN   0.0     NaN    NaN -1.106    NaN     NaN     NaN      NaN     NaN     NaN    NaN      NaN       NaN     NaN      NaN      NaN   0.0    NaN   NaN    NaN    NaN    NaN    NaN   NaN  1.207     NaN     NaN     NaN       NaN     NaN    NaN  NaN    NaN    NaN      NaN    NaN  NaN    NaN   NaN  NaN    NaN      NaN  5.415    NaN    NaN    NaN    NaN    NaN  NaN      NaN   NaN     NaN     NaN     NaN    NaN     NaN   NaN    NaN    NaN    NaN   NaN    NaN    NaN    NaN    NaN    NaN    NaN    NaN   NaN    NaN   NaN  0.236  0.236   NaN  0.236  0.236   NaN    NaN  5.077    NaN    NaN    NaN   NaN    NaN   NaN    NaN   NaN    NaN  1.207     NaN   0.0  0.638  0.055    NaN   NaN     NaN     NaN     NaN     NaN    NaN  1.369     NaN   NaN  NaN   NaN NaN    NaN  NaN    NaN    NaN    NaN    NaN   NaN  NaN   NaN    NaN   NaN   NaN    NaN   NaN   NaN    NaN    NaN   NaN    NaN    NaN   NaN   NaN   NaN   NaN    NaN    NaN   NaN   NaN    NaN    NaN    NaN    NaN    NaN   NaN   NaN   NaN  NaN   NaN   NaN   NaN   0.0   NaN   NaN -0.607    0.0  0.191   NaN    NaN  NaN  0.200   NaN   0.0     0.0    NaN    NaN    NaN   NaN   NaN    NaN   NaN   NaN    NaN   NaN  0.788  0.000     NaN     NaN  5.804     NaN NaN  NaN   0.0    0.0    NaN   NaN   NaN    NaN    NaN     NaN     NaN  NaN  0.0   NaN    NaN    NaN  NaN NaN  10.881  NaN  5.816   NaN  0.0   NaN   0.0  0.0  0.336  0.219  0.162  0.011  0.006  0.734    NaN  0.0    NaN  NaN  NaN  NaN   NaN  0.236  0.236    0.0    NaN       NaN       NaN   NaN  NaN  NaN    NaN    NaN  NaN   NaN  0.037  0.037  0.2    NaN     NaN    NaN   NaN    NaN     NaN       NaN  0.655 NaN  0.859  1.298    NaN    NaN      NaN    NaN    NaN    NaN    NaN      NaN    NaN    NaN    NaN     NaN      NaN    NaN      NaN      NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN     NaN     NaN   NaN    NaN   NaN  NaN   NaN    NaN   NaN   NaN  0.236    NaN   NaN  NaN    NaN   NaN    NaN      NaN    NaN    NaN      NaN    NaN     NaN     NaN       NaN     NaN    NaN   NaN     NaN   NaN    NaN  3.703    NaN    NaN     NaN     NaN     NaN     NaN    NaN  1.325     NaN     NaN    NaN    NaN     NaN     NaN     NaN     NaN  NaN   NaN    NaN      NaN    NaN  NaN    NaN    NaN     0.0      NaN      NaN   NaN   0.0    0.0    0.0    0.0    0.0     0.0   NaN    NaN   NaN  NaN   NaN   NaN  NaN   NaN   NaN   NaN   NaN   NaN  NaN  NaN    NaN  NaN  NaN   NaN    NaN    NaN      NaN  NaN -2.568  0.000    0.0  0.051    0.0  0.175  3.489    0.0  3.489    NaN  NaN -2.568    NaN  12.446  NaN  NaN  NaN  NaN   NaN  NaN   NaN   NaN  NaN  NaN    NaN  NaN     NaN       NaN    NaN    NaN    NaN   NaN   NaN    NaN    NaN   NaN   NaN   NaN   NaN   NaN    NaN    NaN    NaN  NaN  NaN  12.446      NaN      NaN   NaN NaN  NaN     NaN   NaN  5.065   NaN   NaN   NaN     NaN   NaN  1.096   NaN    NaN      NaN  0.00   NaN     NaN    NaN    NaN  0.082  0.000     NaN   NaN  NaN   NaN  0.000   NaN   NaN    NaN     NaN  NaN    NaN    NaN   NaN    NaN    NaN    NaN   NaN   NaN   NaN  NaN NaN   NaN    NaN   NaN  NaN  NaN  1.596     NaN  NaN    NaN  NaN   0.0    0.0     NaN    0.0    0.0    0.0    NaN     NaN  0.0   0.0    NaN     NaN     NaN   0.0     0.0    0.0   0.0     0.0   0.0    NaN     NaN    0.0   0.0    NaN     NaN     NaN     NaN  0.0  0.0  0.015  0.0  0.0  0.0          NaN         NaN       NaN       NaN       NaN          NaN          NaN           NaN           NaN          NaN            NaN        NaN          NaN          NaN   NaN  0.0      NaN   NaN   NaN    NaN     NaN   NaN      NaN       NaN  NaN    NaN   NaN    NaN    NaN    NaN   NaN      NaN  NaN NaN    NaN   NaN   NaN     NaN  NaN   NaN    NaN      NaN    NaN   NaN   NaN     NaN    NaN      NaN    NaN     NaN      NaN    NaN     NaN      NaN    NaN     NaN     NaN   NaN     NaN      NaN       NaN     NaN     NaN   NaN     NaN      NaN     NaN     NaN   NaN  NaN -0.480    NaN     NaN  NaN  NaN    NaN  NaN  0.788  0.069   NaN   NaN   NaN    NaN    NaN  NaN    NaN   NaN  0.0   0.0    0.0    NaN    NaN   NaN    NaN  0.660    NaN      NaN   NaN    NaN  NaN   NaN  NaN    NaN    NaN   NaN  NaN  11.148     NaN    NaN      NaN   NaN  NaN  0.104  NaN   NaN  0.475 NaN  4.117   NaN    NaN     NaN NaN  NaN    NaN     NaN    NaN     NaN    NaN  01   14.0  0000788306      I  USA  541512.0  7373.0   319300.0      0.0      0.0   4.000    4.75   3.875      1.0   448900.0      0.0      0.0     NaN    8.25    8.25    4.00      1.0   1.0     6     1   None  None  None
+2  011946  1991-05-31  1990.0   INDL      C      D  SUMM_STD  GCCC.1  369386107  GENERAL COMPUTER CORP INC    None    None    None   NaN   NaN  NaN  None   None   USD   None     NaN      NaN  None  5.0    NaN  None  None   12.0  NaN  53.0  None  None  3.0     None  None  None    NaN   NaN    NaN   NaN    NaN    NaN      NaN    NaN     NaN    NaN      NaN      NaN    NaN       NaN      NaN       NaN        NaN     NaN    NaN    NaN    NaN   NaN     NaN     NaN   NaN    NaN  NaN   NaN   NaN  NaN    NaN        NaN        NaN      NaN        NaN   NaN   NaN     NaN    NaN    NaN     NaN  NaN  NaN    NaN  NaN  NaN  NaN    NaN  NaN  NaN    NaN  NaN  NaN  NaN   NaN    NaN      NaN    NaN  10.881   NaN    NaN   NaN    NaN   NaN    NaN   NaN   NaN   NaN     NaN    NaN    NaN  NaN    NaN   NaN       NaN     NaN    NaN NaN    NaN    NaN    NaN    NaN     NaN  0.372    NaN NaN  NaN    NaN   NaN        NaN    NaN    NaN    NaN   NaN    NaN  NaN    NaN  NaN   NaN   NaN   NaN    NaN    NaN    NaN  NaN NaN      NaN     NaN      NaN    NaN      NaN    NaN      NaN      NaN   NaN   NaN   NaN   NaN   NaN   NaN  NaN   NaN  NaN   NaN  NaN    NaN  NaN  NaN     NaN  7.470    NaN    NaN    NaN    NaN    NaN  NaN     NaN    NaN   NaN    NaN   1.586   NaN    NaN    NaN     NaN    NaN    NaN    NaN     NaN    NaN  NaN  NaN   NaN   NaN     NaN  NaN    NaN     NaN   NaN  NaN    NaN    NaN  NaN  NaN  NaN   NaN    NaN     NaN       NaN    NaN     NaN    NaN  NaN   NaN     NaN     NaN    NaN    NaN    NaN   NaN   NaN    NaN     NaN  0.012  NaN    NaN  NaN   NaN    NaN    NaN    NaN     NaN     NaN     NaN     NaN    NaN     NaN    NaN    NaN   NaN    NaN    NaN   NaN    NaN   NaN   NaN    NaN     NaN    NaN    NaN  NaN   NaN   NaN  NaN NaN   NaN   NaN     NaN   NaN   NaN  NaN  NaN    NaN     NaN  NaN   NaN   NaN    NaN     NaN     NaN    NaN    NaN  NaN    NaN   NaN   NaN   NaN NaN    NaN     NaN   NaN   NaN    NaN    NaN    NaN   0.08   0.08     NaN      NaN     NaN    NaN    NaN   NaN    NaN     NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  NaN   NaN  NaN  NaN  NaN  NaN   NaN     NaN    NaN    NaN    NaN     NaN     NaN      NaN     NaN     NaN    NaN      NaN       NaN     NaN      NaN      NaN   NaN    NaN   NaN    NaN    NaN    NaN    NaN   NaN    NaN     NaN     NaN     NaN       NaN     NaN    NaN  NaN    NaN    NaN      NaN    NaN  NaN    NaN   NaN  NaN    NaN      NaN    NaN    NaN    NaN    NaN    NaN    NaN  NaN      NaN   NaN     NaN     NaN     NaN    NaN     NaN   NaN    NaN    NaN    NaN   NaN    NaN    NaN    NaN    NaN    NaN    NaN    NaN   NaN    NaN   NaN  0.123    NaN   NaN    NaN    NaN   NaN    NaN    NaN    NaN    NaN    NaN   NaN    NaN   NaN    NaN   NaN    NaN    NaN     NaN   NaN    NaN    NaN    NaN   NaN     NaN     NaN     NaN     NaN    NaN    NaN     NaN   NaN  NaN   NaN NaN    NaN  NaN    NaN    NaN    NaN    NaN   NaN  NaN   NaN    NaN   NaN   NaN    NaN   NaN   NaN    NaN    NaN   NaN    NaN    NaN   NaN   NaN   NaN   NaN    NaN    NaN   NaN   NaN    NaN    NaN    NaN    NaN    NaN   NaN   NaN   NaN  NaN   NaN   NaN   NaN   NaN   NaN   NaN    NaN    NaN    NaN   NaN    NaN  NaN    NaN   NaN   NaN     NaN    NaN    NaN    NaN   NaN   NaN    NaN   NaN   NaN    NaN   NaN    NaN    NaN     NaN     NaN    NaN     NaN NaN  NaN   NaN    NaN    NaN   NaN   NaN    NaN    NaN     NaN     NaN  NaN  NaN   NaN    NaN    NaN  NaN NaN     NaN  NaN    NaN   NaN  NaN   NaN   NaN  0.0    NaN    NaN    NaN    NaN    NaN    NaN    NaN  NaN    NaN  NaN  NaN  NaN   NaN  0.123    NaN    NaN    NaN       NaN       NaN   NaN  NaN  NaN    NaN    NaN  NaN   NaN  0.038    NaN  NaN    NaN     NaN    NaN   NaN    NaN     NaN       NaN    NaN NaN    NaN    NaN    NaN    NaN      NaN    NaN    NaN    NaN    NaN      NaN    NaN    NaN    NaN     NaN      NaN    NaN      NaN      NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN     NaN     NaN   NaN    NaN   NaN  NaN   NaN    NaN   NaN   NaN  0.123    NaN   NaN  NaN    NaN   NaN    NaN      NaN    NaN    NaN      NaN    NaN     NaN     NaN       NaN     NaN    NaN   NaN     NaN   NaN    NaN    NaN    NaN    NaN     NaN     NaN     NaN     NaN    NaN    NaN     NaN     NaN    NaN    NaN     NaN     NaN     NaN     NaN  NaN   NaN    NaN      NaN    NaN  NaN    NaN    NaN     NaN      NaN      NaN   NaN   NaN    NaN    NaN    NaN    NaN     NaN   NaN    NaN   NaN  NaN   NaN   NaN  NaN   NaN   NaN   NaN   NaN   NaN  NaN  NaN    NaN  NaN  NaN   NaN    NaN    NaN      NaN  NaN    NaN    NaN    NaN    NaN    NaN    NaN    NaN    NaN    NaN    NaN  NaN -3.165    NaN     NaN  NaN  NaN  NaN  NaN   NaN  NaN   NaN   NaN  NaN  NaN    NaN  NaN     NaN       NaN    NaN    NaN    NaN   NaN   NaN    NaN    NaN   NaN   NaN   NaN   NaN   NaN    NaN    NaN    NaN  NaN  NaN  12.332      NaN      NaN   NaN NaN  NaN     NaN   NaN  4.468   NaN   NaN   NaN     NaN   NaN    NaN   NaN    NaN      NaN   NaN   NaN     NaN    NaN    NaN    NaN    NaN     NaN   NaN  NaN   NaN    NaN   NaN   NaN    NaN     NaN  NaN    NaN    NaN   NaN    NaN    NaN    NaN   NaN   NaN   NaN  NaN NaN   NaN    NaN   NaN  NaN  NaN    NaN     NaN  NaN    NaN  NaN   NaN    NaN     NaN    NaN    NaN    NaN    NaN     NaN  NaN   NaN    NaN     NaN     NaN   NaN     NaN    NaN   NaN     NaN   NaN    NaN     NaN    NaN   NaN    NaN     NaN     NaN     NaN  NaN  NaN    NaN  NaN  NaN  0.0          NaN         NaN       NaN       NaN       NaN          NaN          NaN           NaN           NaN          NaN            NaN        NaN          NaN          NaN   NaN  NaN      NaN   NaN   NaN    NaN     NaN   NaN      NaN       NaN  NaN    NaN   NaN    NaN    NaN    NaN   NaN      NaN  NaN NaN    NaN   NaN   NaN     NaN  NaN   NaN    NaN      NaN    NaN   NaN   NaN     NaN    NaN      NaN    NaN     NaN      NaN    NaN     NaN      NaN    NaN     NaN     NaN   NaN     NaN      NaN       NaN     NaN     NaN   NaN     NaN      NaN     NaN     NaN   NaN  NaN    NaN    NaN     NaN  NaN  NaN    NaN  NaN    NaN    NaN   NaN   NaN   NaN    NaN    NaN  NaN    NaN   NaN  NaN   0.0    NaN    NaN    NaN   NaN    NaN  0.660    NaN      NaN   NaN    NaN  NaN   NaN  NaN    NaN    NaN   NaN  NaN     NaN     NaN    NaN      NaN   NaN  NaN    NaN  NaN   NaN    NaN NaN  4.117   NaN    NaN     NaN NaN  NaN    NaN     NaN    NaN     NaN    NaN  01   14.0  0000788306      I  USA  541512.0  7373.0   319300.0      0.0      0.0   4.000    4.75   3.875      1.0   448900.0      0.0      0.0     NaN    8.25    8.25    4.00      1.0   NaN  None  None   None  None  None
+3  011946  1992-05-31  1991.0   INDL      C      D       STD  GCCC.1  369386107  GENERAL COMPUTER CORP INC    None      DS    None   NaN   1.0  1.0  None     AC   USD    USD     1.0      NaN     Y  5.0    1.0  None  None   12.0  7.0  53.0  None  None  3.0     None  None  None    0.0   NaN    NaN   NaN  0.346    NaN      NaN  0.346     NaN    NaN      NaN      NaN    NaN       NaN      NaN       NaN        NaN     NaN    NaN  5.237    NaN   NaN     NaN     NaN   NaN  0.084  NaN   NaN   NaN  NaN  3.235        NaN        NaN      NaN        NaN   NaN   NaN   0.046  3.235  0.592  -0.336  NaN  NaN    NaN  NaN  0.0  NaN    NaN  0.0  NaN    NaN  0.0  NaN  NaN   NaN    NaN      NaN    NaN  10.686   NaN    NaN   NaN    NaN   NaN    NaN   NaN   NaN   NaN     NaN    NaN    NaN  NaN    NaN   NaN       NaN  3.3133    NaN NaN    NaN    NaN    NaN  7.597     NaN  0.198  0.198 NaN  NaN    NaN   NaN        NaN  5.298  5.298  4.175   NaN    NaN  NaN    NaN  NaN   NaN   NaN   NaN  0.290  0.290  0.243  NaN NaN      NaN     NaN      NaN    NaN      NaN    NaN      NaN      NaN   0.0   0.0   0.0   0.0   NaN   NaN  NaN   NaN  NaN   NaN  NaN    NaN  NaN  NaN     NaN  7.380    NaN    NaN    NaN    NaN    NaN  NaN     NaN    NaN   NaN  1.599   1.695   1.0    0.0    0.0   0.311  0.537  0.226  0.160     0.1    0.0  NaN  0.0   0.0   NaN     0.0  0.0    0.0     0.0   0.0  0.0  3.122  0.000  0.0  0.0  0.0   NaN    NaN     NaN       NaN    NaN     NaN    NaN  0.0   NaN     NaN     NaN  3.522    NaN    0.2   0.0   0.0  0.842     NaN  0.000  0.0  0.000  0.0   NaN  0.509    NaN    NaN     NaN     NaN     NaN     NaN    NaN     NaN  2.773  0.918   NaN    NaN    NaN   NaN    NaN   NaN   NaN    NaN     NaN    NaN    NaN  NaN   NaN   NaN  0.0 NaN   NaN   NaN     NaN   NaN   0.0  0.0  0.0    NaN     NaN  0.0   0.0   NaN    NaN     NaN     NaN    NaN    NaN  0.0  0.000   0.0   0.0   0.0 NaN  1.266   1.775   NaN   NaN  0.183   0.42   0.42   0.42   0.42     0.0      0.0     NaN    NaN    0.0   0.0    0.0     NaN   0.0   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  NaN   NaN  NaN  NaN  NaN  NaN   0.0     NaN    NaN -0.518    NaN     NaN     NaN      NaN     NaN     NaN    NaN      NaN       NaN     NaN      NaN      NaN   0.0    NaN   NaN    NaN    NaN    NaN    NaN   NaN  1.123     NaN     NaN     NaN       NaN     NaN    NaN  NaN    NaN    NaN      NaN    NaN  NaN    NaN   NaN  NaN    NaN      NaN  5.858    NaN    NaN    NaN    NaN    NaN  NaN      NaN   NaN     NaN     NaN     NaN    NaN     NaN   NaN    NaN    NaN    NaN   NaN    NaN    NaN    NaN    NaN    NaN    NaN    NaN   NaN    NaN   NaN  0.706  0.706   NaN  0.706  0.706   NaN    NaN  5.298    NaN    NaN    NaN   NaN    NaN   NaN    NaN   NaN    NaN  1.123     NaN   0.0  0.499 -0.143    NaN   NaN     NaN     NaN     NaN     NaN    NaN  1.512     NaN   NaN  NaN   NaN NaN    NaN  NaN    NaN    NaN    NaN    NaN   NaN  NaN   NaN    NaN   NaN   NaN    NaN   NaN   NaN    NaN    NaN   NaN    NaN    NaN   NaN   NaN   NaN   NaN    NaN    NaN   NaN   NaN    NaN    NaN    NaN    NaN    NaN   NaN   NaN   NaN  NaN   NaN   NaN   NaN   0.0   NaN   NaN -0.831    0.0  0.019   NaN    NaN  NaN -0.233   NaN   0.0     0.0    NaN    NaN    NaN   NaN   NaN    NaN   NaN   NaN    NaN   NaN  1.274  0.549     NaN     NaN  5.388     NaN NaN  NaN   0.0    0.0    NaN   NaN   NaN    NaN    NaN     NaN     NaN  NaN  0.0   NaN    NaN    NaN  NaN NaN  10.686  NaN  5.388   NaN  0.0   NaN   0.0  0.0  0.523  0.381  0.062  0.035  0.007  1.008    NaN  0.0    NaN  NaN  NaN  NaN   NaN  0.706  0.706    0.0    NaN       NaN       NaN   NaN  NaN  NaN    NaN    NaN  NaN   NaN  0.028  0.028  0.4    NaN     NaN    NaN   NaN    NaN     NaN       NaN  0.994 NaN  1.266  1.775    NaN    NaN      NaN    NaN    NaN    NaN    NaN      NaN    NaN    NaN    NaN     NaN      NaN    NaN      NaN      NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN     NaN     NaN   NaN    NaN   NaN  NaN   NaN    NaN   NaN   NaN  0.706    NaN   NaN  NaN    NaN   NaN    NaN      NaN    NaN    NaN      NaN    NaN     NaN     NaN       NaN     NaN    NaN   NaN     NaN   NaN    NaN  3.845    NaN    NaN     NaN     NaN     NaN     NaN    NaN  1.072     NaN     NaN    NaN    NaN     NaN     NaN     NaN     NaN  NaN   NaN    NaN      NaN    NaN  NaN    NaN    NaN     0.0      NaN      NaN   NaN   0.0    0.0    0.0    0.0    0.0     0.0   NaN    NaN   NaN  NaN   NaN   NaN  NaN   NaN   NaN   NaN   NaN   NaN  NaN  NaN    NaN  NaN  NaN   NaN    NaN    NaN      NaN  NaN -2.459 -0.597    0.0 -0.189    0.0  0.193  3.089    0.0  3.089    NaN  NaN -2.459    NaN  13.238  NaN  NaN  NaN  NaN   NaN  NaN   NaN   NaN  NaN  NaN    NaN  NaN     NaN       NaN    NaN    NaN    NaN   NaN   NaN    NaN    NaN   NaN   NaN   NaN   NaN   NaN    NaN    NaN    NaN  NaN  NaN  13.238      NaN      NaN   NaN NaN  NaN     NaN   NaN  5.298   NaN   NaN   NaN     NaN   NaN  0.761   NaN    NaN      NaN -0.15   NaN     NaN    NaN    NaN  0.035 -0.008     NaN   NaN  NaN   NaN  0.124   NaN   NaN    NaN     NaN  NaN    NaN    NaN   NaN    NaN    NaN    NaN   NaN   NaN   NaN  NaN NaN   NaN    NaN   NaN  NaN  NaN  1.135     NaN  NaN    NaN  NaN   0.0    0.0     NaN    0.0    0.0    0.0    NaN     NaN  0.0   0.0    NaN     NaN     NaN   0.0     0.0    0.0   0.0     0.0   0.0    NaN     NaN    0.0   0.0    NaN     NaN     NaN     NaN  0.0  0.0  0.026  0.0  0.0  0.0          NaN         NaN       NaN       NaN       NaN          NaN          NaN           NaN           NaN          NaN            NaN        NaN          NaN          NaN   NaN  0.0      NaN   NaN   NaN    NaN     NaN   NaN      NaN       NaN  NaN    NaN   NaN    NaN    NaN    NaN   NaN      NaN  NaN NaN    NaN   NaN   NaN     NaN  NaN   NaN    NaN      NaN    NaN   NaN   NaN     NaN    NaN      NaN    NaN     NaN      NaN    NaN     NaN      NaN    NaN     NaN     NaN   NaN     NaN      NaN       NaN     NaN     NaN   NaN     NaN      NaN     NaN     NaN   NaN  NaN -0.151    NaN     NaN  NaN  NaN    NaN  NaN  0.725  0.077   NaN   NaN   NaN    NaN    NaN  NaN    NaN   NaN  0.0   0.0    0.0    NaN    NaN   NaN    NaN  0.438    NaN      NaN   NaN    NaN  NaN   NaN  NaN    NaN    NaN   NaN  NaN  11.463     NaN    NaN      NaN   NaN  NaN  0.145  NaN   NaN  0.509 NaN  4.083   NaN    NaN     NaN NaN  NaN    NaN     NaN    NaN     NaN    NaN  01   14.0  0000788306      I  USA  541512.0  7373.0  1410900.0      0.0      0.0  14.500   19.00   4.000      1.0  1734400.0      0.0      0.0     NaN   19.50   21.00    7.75      1.0   1.0     6     1   None  None  None
+4  011946  1992-05-31  1991.0   INDL      C      D  SUMM_STD  GCCC.1  369386107  GENERAL COMPUTER CORP INC    None    None    None   NaN   NaN  NaN  None   None   USD   None     NaN      NaN  None  5.0    NaN  None  None   12.0  NaN  53.0  None  None  3.0     None  None  None    NaN   NaN    NaN   NaN    NaN    NaN      NaN    NaN     NaN    NaN      NaN      NaN    NaN       NaN      NaN       NaN        NaN     NaN    NaN    NaN    NaN   NaN     NaN     NaN   NaN    NaN  NaN   NaN   NaN  NaN    NaN        NaN        NaN      NaN        NaN   NaN   NaN     NaN    NaN    NaN     NaN  NaN  NaN    NaN  NaN  NaN  NaN    NaN  NaN  NaN    NaN  NaN  NaN  NaN   NaN    NaN      NaN    NaN  10.686   NaN    NaN   NaN    NaN   NaN    NaN   NaN   NaN   NaN     NaN    NaN    NaN  NaN    NaN   NaN       NaN     NaN    NaN NaN    NaN    NaN    NaN    NaN     NaN  0.198    NaN NaN  NaN    NaN   NaN        NaN    NaN    NaN    NaN   NaN    NaN  NaN    NaN  NaN   NaN   NaN   NaN    NaN    NaN    NaN  NaN NaN      NaN     NaN      NaN    NaN      NaN    NaN      NaN      NaN   NaN   NaN   NaN   NaN   NaN   NaN  NaN   NaN  NaN   NaN  NaN    NaN  NaN  NaN     NaN  7.889    NaN    NaN    NaN    NaN    NaN  NaN     NaN    NaN   NaN    NaN   1.695   NaN    NaN    NaN     NaN    NaN    NaN    NaN     NaN    NaN  NaN  NaN   NaN   NaN     NaN  NaN    NaN     NaN   NaN  NaN    NaN    NaN  NaN  NaN  NaN   NaN    NaN     NaN       NaN    NaN     NaN    NaN  NaN   NaN     NaN     NaN    NaN    NaN    NaN   NaN   NaN    NaN     NaN  0.000  NaN    NaN  NaN   NaN    NaN    NaN    NaN     NaN     NaN     NaN     NaN    NaN     NaN    NaN    NaN   NaN    NaN    NaN   NaN    NaN   NaN   NaN    NaN     NaN    NaN    NaN  NaN   NaN   NaN  NaN NaN   NaN   NaN     NaN   NaN   NaN  NaN  NaN    NaN     NaN  NaN   NaN   NaN    NaN     NaN     NaN    NaN    NaN  NaN    NaN   NaN   NaN   NaN NaN    NaN     NaN   NaN   NaN    NaN    NaN    NaN   0.42   0.42     NaN      NaN     NaN    NaN    NaN   NaN    NaN     NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN  NaN   NaN  NaN  NaN  NaN  NaN   NaN     NaN    NaN    NaN    NaN     NaN     NaN      NaN     NaN     NaN    NaN      NaN       NaN     NaN      NaN      NaN   NaN    NaN   NaN    NaN    NaN    NaN    NaN   NaN    NaN     NaN     NaN     NaN       NaN     NaN    NaN  NaN    NaN    NaN      NaN    NaN  NaN    NaN   NaN  NaN    NaN      NaN    NaN    NaN    NaN    NaN    NaN    NaN  NaN      NaN   NaN     NaN     NaN     NaN    NaN     NaN   NaN    NaN    NaN    NaN   NaN    NaN    NaN    NaN    NaN    NaN    NaN    NaN   NaN    NaN   NaN  0.706    NaN   NaN    NaN    NaN   NaN    NaN    NaN    NaN    NaN    NaN   NaN    NaN   NaN    NaN   NaN    NaN    NaN     NaN   NaN    NaN    NaN    NaN   NaN     NaN     NaN     NaN     NaN    NaN    NaN     NaN   NaN  NaN   NaN NaN    NaN  NaN    NaN    NaN    NaN    NaN   NaN  NaN   NaN    NaN   NaN   NaN    NaN   NaN   NaN    NaN    NaN   NaN    NaN    NaN   NaN   NaN   NaN   NaN    NaN    NaN   NaN   NaN    NaN    NaN    NaN    NaN    NaN   NaN   NaN   NaN  NaN   NaN   NaN   NaN   NaN   NaN   NaN    NaN    NaN    NaN   NaN    NaN  NaN    NaN   NaN   NaN     NaN    NaN    NaN    NaN   NaN   NaN    NaN   NaN   NaN    NaN   NaN    NaN    NaN     NaN     NaN    NaN     NaN NaN  NaN   NaN    NaN    NaN   NaN   NaN    NaN    NaN     NaN     NaN  NaN  NaN   NaN    NaN    NaN  NaN NaN     NaN  NaN    NaN   NaN  NaN   NaN   NaN  0.0    NaN    NaN    NaN    NaN    NaN    NaN    NaN  NaN    NaN  NaN  NaN  NaN   NaN  0.706    NaN    NaN    NaN       NaN       NaN   NaN  NaN  NaN    NaN    NaN  NaN   NaN -0.122    NaN  NaN    NaN     NaN    NaN   NaN    NaN     NaN       NaN    NaN NaN    NaN    NaN    NaN    NaN      NaN    NaN    NaN    NaN    NaN      NaN    NaN    NaN    NaN     NaN      NaN    NaN      NaN      NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN     NaN     NaN   NaN    NaN   NaN  NaN   NaN    NaN   NaN   NaN  0.706    NaN   NaN  NaN    NaN   NaN    NaN      NaN    NaN    NaN      NaN    NaN     NaN     NaN       NaN     NaN    NaN   NaN     NaN   NaN    NaN    NaN    NaN    NaN     NaN     NaN     NaN     NaN    NaN  1.072     NaN     NaN    NaN    NaN     NaN     NaN     NaN     NaN  NaN   NaN    NaN      NaN    NaN  NaN    NaN    NaN     NaN      NaN      NaN   NaN   NaN    NaN    NaN    NaN    NaN     NaN   NaN    NaN   NaN  NaN   NaN   NaN  NaN   NaN   NaN   NaN   NaN   NaN  NaN  NaN    NaN  NaN  NaN   NaN    NaN    NaN      NaN  NaN    NaN    NaN    NaN    NaN    NaN    NaN    NaN    NaN    NaN    NaN  NaN -2.459    NaN     NaN  NaN  NaN  NaN  NaN   NaN  NaN   NaN   NaN  NaN  NaN    NaN  NaN     NaN       NaN    NaN    NaN    NaN   NaN   NaN    NaN    NaN   NaN   NaN   NaN   NaN   NaN    NaN    NaN    NaN  NaN  NaN  13.238      NaN      NaN   NaN NaN  NaN     NaN   NaN  5.298   NaN   NaN   NaN     NaN   NaN    NaN   NaN    NaN      NaN   NaN   NaN     NaN    NaN    NaN    NaN    NaN     NaN   NaN  NaN   NaN    NaN   NaN   NaN    NaN     NaN  NaN    NaN    NaN   NaN    NaN    NaN    NaN   NaN   NaN   NaN  NaN NaN   NaN    NaN   NaN  NaN  NaN    NaN     NaN  NaN    NaN  NaN   NaN    NaN     NaN    NaN    NaN    NaN    NaN     NaN  NaN   NaN    NaN     NaN     NaN   NaN     NaN    NaN   NaN     NaN   NaN    NaN     NaN    NaN   NaN    NaN     NaN     NaN     NaN  NaN  NaN    NaN  NaN  NaN  0.0          NaN         NaN       NaN       NaN       NaN          NaN          NaN           NaN           NaN          NaN            NaN        NaN          NaN          NaN   NaN  NaN      NaN   NaN   NaN    NaN     NaN   NaN      NaN       NaN  NaN    NaN   NaN    NaN    NaN    NaN   NaN      NaN  NaN NaN    NaN   NaN   NaN     NaN  NaN   NaN    NaN      NaN    NaN   NaN   NaN     NaN    NaN      NaN    NaN     NaN      NaN    NaN     NaN      NaN    NaN     NaN     NaN   NaN     NaN      NaN       NaN     NaN     NaN   NaN     NaN      NaN     NaN     NaN   NaN  NaN -0.151    NaN     NaN  NaN  NaN    NaN  NaN    NaN    NaN   NaN   NaN   NaN    NaN    NaN  NaN    NaN   NaN  NaN   0.0    NaN    NaN    NaN   NaN    NaN  0.438    NaN      NaN   NaN    NaN  NaN   NaN  NaN    NaN    NaN   NaN  NaN     NaN     NaN    NaN      NaN   NaN  NaN    NaN  NaN   NaN    NaN NaN  4.083   NaN    NaN     NaN NaN  NaN    NaN     NaN    NaN     NaN    NaN  01   14.0  0000788306      I  USA  541512.0  7373.0  1410900.0      0.0      0.0  14.500   19.00   4.000      1.0  1734400.0      0.0      0.0     NaN   19.50   21.00    7.75      1.0   NaN  None  None   None  None  None
+
+==================================================
+Processing file: crsp.ccmxpf_linktable.parquet
+==================================================
+
+Field Names and Data Types:
+<pyarrow._parquet.ParquetSchema object at 0x135d1dfc0>
+required group field_id=-1 schema {
+  optional binary field_id=-1 gvkey (String);
+  optional binary field_id=-1 linkprim (String);
+  optional binary field_id=-1 liid (String);
+  optional binary field_id=-1 linktype (String);
+  optional double field_id=-1 lpermno;
+  optional double field_id=-1 lpermco;
+  optional double field_id=-1 usedflag;
+  optional binary field_id=-1 linkdt (String);
+  optional binary field_id=-1 linkenddt (String);
+}
+
+
+First 5 Rows:
+    gvkey linkprim liid linktype  lpermno  lpermco  usedflag      linkdt   linkenddt
+0  001000        C  00X       NU      NaN      NaN      -1.0  1961-01-01  1970-09-29
+1  001000        P   01       NU      NaN      NaN      -1.0  1970-09-30  1970-11-12
+2  001000        P   01       LU  25881.0  23369.0       1.0  1970-11-13  1978-06-30
+3  001001        C  00X       NU      NaN      NaN      -1.0  1978-01-01  1983-09-19
+4  001001        P   01       LU  10015.0   6398.0       1.0  1983-09-20  1986-07-31
+
+==================================================
+Processing file: crsp.dsenames.parquet
+==================================================
+
+Field Names and Data Types:
+<pyarrow._parquet.ParquetSchema object at 0x111dfec00>
+required group field_id=-1 schema {
+  optional int32 field_id=-1 permno;
+  optional binary field_id=-1 namedt (String);
+  optional binary field_id=-1 nameendt (String);
+  optional int32 field_id=-1 shrcd;
+  optional int32 field_id=-1 exchcd;
+  optional int32 field_id=-1 siccd;
+  optional binary field_id=-1 ncusip (String);
+  optional binary field_id=-1 ticker (String);
+  optional binary field_id=-1 comnam (String);
+  optional binary field_id=-1 shrcls (String);
+  optional binary field_id=-1 tsymbol (String);
+  optional binary field_id=-1 naics (String);
+  optional binary field_id=-1 primexch (String);
+  optional binary field_id=-1 trdstat (String);
+  optional binary field_id=-1 secstat (String);
+  optional int32 field_id=-1 permco;
+  optional int32 field_id=-1 compno;
+  optional int32 field_id=-1 issuno;
+  optional int32 field_id=-1 hexcd;
+  optional int32 field_id=-1 hsiccd;
+  optional binary field_id=-1 cusip (String);
+}
+
+
+First 5 Rows:
+   permno      namedt    nameendt  shrcd  exchcd  siccd    ncusip ticker                     comnam shrcls tsymbol naics primexch trdstat secstat  permco    compno  issuno  hexcd  hsiccd     cusip
+0   10000  1986-01-07  1986-12-03     10       3   3990  68391610  OMFGA  OPTIMUM MANUFACTURING INC      A   OMFGA  None        Q       A       R    7952  60007905   10396      3    3990  68391610
+1   10000  1986-12-04  1987-03-09     10       3   3990  68391610  OMFGA  OPTIMUM MANUFACTURING INC      A   OMFAC  None        Q       A       R    7952  60007905   10396      3    3990  68391610
+2   10000  1987-03-10  1987-06-11     10       3   3990  68391610  OMFGA  OPTIMUM MANUFACTURING INC      A   OMFGA  None        Q       A       R    7952  60007905   10396      3    3990  68391610
+3   10001  1986-01-09  1993-11-21     11       3   4920  39040610   GFGC         GREAT FALLS GAS CO   None    GFGC  None        Q       A       R    7953  60007906   10398      2    4925  36720410
+4   10001  1993-11-22  2004-06-09     11       3   4920  29274A10   EWST            ENERGY WEST INC   None    EWST  None        Q       A       R    7953  60007906   10398      2    4925  36720410
+
+==================================================
+Processing file: crsp.dsf.parquet
+==================================================
+
+Field Names and Data Types:
+<pyarrow._parquet.ParquetSchema object at 0x1119c3d40>
+required group field_id=-1 schema {
+  optional binary field_id=-1 cusip (String);
+  optional int32 field_id=-1 permno;
+  optional int32 field_id=-1 permco;
+  optional int32 field_id=-1 issuno;
+  optional int32 field_id=-1 hexcd;
+  optional int32 field_id=-1 hsiccd;
+  optional binary field_id=-1 date (String);
+  optional double field_id=-1 bidlo;
+  optional double field_id=-1 askhi;
+  optional double field_id=-1 prc;
+  optional double field_id=-1 vol;
+  optional double field_id=-1 ret;
+  optional double field_id=-1 bid;
+  optional double field_id=-1 ask;
+  optional double field_id=-1 shrout;
+  optional double field_id=-1 cfacpr;
+  optional double field_id=-1 cfacshr;
+  optional double field_id=-1 openprc;
+  optional int32 field_id=-1 numtrd;
+  optional double field_id=-1 retx;
+}
+
+
+First 5 Rows:
+      cusip  permno  permco  issuno  hexcd  hsiccd        date  bidlo  askhi   prc     vol       ret  bid  ask  shrout  cfacpr  cfacshr  openprc  numtrd      retx
+0  42221N10   86423    7636    9943      2  2771.0  1991-05-24    5.0    5.5 -5.25  1200.0 -0.086957  NaN  NaN   941.0     1.0      1.0      NaN     NaN -0.086957
+1  42221N10   86423    7636    9943      2  2771.0  1991-05-28    5.0    5.5 -5.25    56.0  0.000000  NaN  NaN   941.0     1.0      1.0      NaN     NaN  0.000000
+2  42221N10   86423    7636    9943      2  2771.0  1991-05-29    5.0    5.5 -5.25     0.0  0.000000  NaN  NaN   941.0     1.0      1.0      NaN     NaN  0.000000
+3  42221N10   86423    7636    9943      2  2771.0  1991-05-30    5.0    5.5 -5.25     0.0  0.000000  NaN  NaN   941.0     1.0      1.0      NaN     NaN  0.000000
+4  42221N10   86423    7636    9943      2  2771.0  1991-05-31    5.0    5.5 -5.25   200.0  0.000000  NaN  NaN   941.0     1.0      1.0      NaN     NaN  0.000000
+
+==================================================
+Processing file: crsp.msedelist.parquet
+==================================================
+
+Field Names and Data Types:
+<pyarrow._parquet.ParquetSchema object at 0x125d3f700>
+required group field_id=-1 schema {
+  optional double field_id=-1 permno;
+  optional binary field_id=-1 dlstdt (String);
+  optional double field_id=-1 dlstcd;
+  optional double field_id=-1 nwperm;
+  optional double field_id=-1 nwcomp;
+  optional binary field_id=-1 nextdt (String);
+  optional double field_id=-1 dlamt;
+  optional double field_id=-1 dlretx;
+  optional double field_id=-1 dlprc;
+  optional binary field_id=-1 dlpdt (String);
+  optional double field_id=-1 dlret;
+  optional double field_id=-1 permco;
+  optional double field_id=-1 compno;
+  optional double field_id=-1 issuno;
+  optional double field_id=-1 hexcd;
+  optional double field_id=-1 hsiccd;
+  optional binary field_id=-1 cusip (String);
+  optional double field_id=-1 acperm;
+  optional double field_id=-1 accomp;
+}
+
+
+First 5 Rows:
+    permno      dlstdt  dlstcd   nwperm  nwcomp      nextdt      dlamt    dlretx     dlprc       dlpdt     dlret  permco      compno   issuno  hexcd  hsiccd     cusip  acperm  accomp
+0  10000.0  1987-06-11   560.0      0.0     0.0  1987-06-12   0.218750  0.000000 -0.218750  1987-06-12  0.000000  7952.0  60007905.0  10396.0    3.0  3990.0  68391610     NaN     NaN
+1  10001.0  2017-08-03   233.0      0.0     0.0        None  13.100000  0.011583  0.000000  2017-08-04  0.011583  7953.0  60007906.0  10398.0    2.0  4925.0  36720410     NaN     NaN
+2  10002.0  2013-02-15   231.0  35263.0  1658.0        None   3.012500  0.046007  0.000000  2013-02-19  0.046007  7954.0  60007907.0  10399.0    3.0  6020.0  05978R10     NaN     NaN
+3  10003.0  1995-12-15   231.0  10569.0  8477.0        None   5.448800  0.013730  0.000000  1995-12-18  0.013730  7957.0  60007910.0  10404.0    3.0  6020.0  39031810     NaN     NaN
+4  10005.0  1991-07-11   560.0      0.0     0.0  1991-07-12   0.140625  0.125000 -0.140625  1991-07-12  0.125000  7961.0  60007914.0  10410.0    3.0  1310.0  95815510     NaN     NaN
+
+==================================================
+Processing file: crsp.msf_delisting_adjusted.parquet
+==================================================
+
+Field Names and Data Types:
+<pyarrow._parquet.ParquetSchema object at 0x1119ca640>
+required group field_id=-1 schema {
+  optional binary field_id=-1 cusip (String);
+  optional double field_id=-1 permno;
+  optional double field_id=-1 permco;
+  optional double field_id=-1 issuno;
+  optional double field_id=-1 hexcd;
+  optional double field_id=-1 hsiccd;
+  optional binary field_id=-1 date (String);
+  optional double field_id=-1 bidlo;
+  optional double field_id=-1 askhi;
+  optional double field_id=-1 prc;
+  optional double field_id=-1 vol;
+  optional double field_id=-1 ret;
+  optional double field_id=-1 bid;
+  optional double field_id=-1 ask;
+  optional double field_id=-1 shrout;
+  optional double field_id=-1 cfacpr;
+  optional double field_id=-1 cfacshr;
+  optional double field_id=-1 altprc;
+  optional double field_id=-1 spread;
+  optional binary field_id=-1 altprcdt (String);
+  optional double field_id=-1 retx;
+  optional binary field_id=-1 yearmonth (String);
+  optional double field_id=-1 dlret;
+  optional double field_id=-1 ret_orig;
+  optional double field_id=-1 permno_2;
+  optional binary field_id=-1 namedt (String);
+  optional binary field_id=-1 nameendt (String);
+  optional double field_id=-1 shrcd;
+  optional double field_id=-1 exchcd;
+  optional double field_id=-1 siccd;
+  optional binary field_id=-1 ncusip (String);
+  optional binary field_id=-1 ticker (String);
+  optional binary field_id=-1 comnam (String);
+  optional binary field_id=-1 shrcls (String);
+  optional binary field_id=-1 tsymbol (String);
+  optional binary field_id=-1 naics (String);
+  optional binary field_id=-1 primexch (String);
+  optional binary field_id=-1 trdstat (String);
+  optional binary field_id=-1 secstat (String);
+  optional double field_id=-1 permco_2;
+  optional double field_id=-1 compno;
+  optional double field_id=-1 issuno_2;
+  optional double field_id=-1 hexcd_2;
+  optional double field_id=-1 hsiccd_2;
+  optional binary field_id=-1 cusip_2 (String);
+}
+
+
+First 5 Rows:
+      cusip   permno  permco   issuno  hexcd  hsiccd        date      bidlo      askhi        prc     vol       ret    bid    ask  shrout  cfacpr  cfacshr     altprc   spread    altprcdt      retx yearmonth  dlret  ret_orig  permno_2      namedt    nameendt  shrcd  exchcd   siccd    ncusip ticker                     comnam shrcls tsymbol   naics primexch trdstat secstat  permco_2      compno  issuno_2  hexcd_2  hsiccd_2   cusip_2
+0  68391610  10000.0  7952.0  10396.0    3.0  3990.0  1987-03-31  -0.250000  -0.406250  -0.250000  1111.0 -0.384615    NaN    NaN  3893.0     1.0      1.0  -0.250000  0.06250  1987-03-31 -0.384615   1987-03    NaN -0.384615   10000.0  1987-03-10  1987-06-11   10.0     3.0  3990.0  68391610  OMFGA  OPTIMUM MANUFACTURING INC      A   OMFGA    None        Q       A       R    7952.0  60007905.0   10396.0      3.0    3990.0  68391610
+1  68391610  10000.0  7952.0  10396.0    3.0  3990.0  1987-04-30  -0.203125  -0.234375  -0.234375   998.0 -0.062500    NaN    NaN  3893.0     1.0      1.0  -0.234375  0.03125  1987-04-30 -0.062500   1987-04    NaN -0.062500   10000.0  1987-03-10  1987-06-11   10.0     3.0  3990.0  68391610  OMFGA  OPTIMUM MANUFACTURING INC      A   OMFGA    None        Q       A       R    7952.0  60007905.0   10396.0      3.0    3990.0  68391610
+2  68391610  10000.0  7952.0  10396.0    3.0  3990.0  1987-05-29  -0.218750  -0.234375  -0.218750   815.0 -0.066667    NaN    NaN  3893.0     1.0      1.0  -0.218750  0.06250  1987-05-29 -0.066667   1987-05    NaN -0.066667   10000.0  1987-03-10  1987-06-11   10.0     3.0  3990.0  68391610  OMFGA  OPTIMUM MANUFACTURING INC      A   OMFGA    None        Q       A       R    7952.0  60007905.0   10396.0      3.0    3990.0  68391610
+3  36720410  10001.0  7953.0  10398.0    2.0  4925.0  2010-07-30  10.850000  11.810000  11.720000  2858.0  0.083333  11.68  11.75  6080.0     1.0      1.0  11.720000      NaN  2010-07-30  0.079190   2010-07    NaN  0.083333   10001.0  2010-07-09  2017-08-03   11.0     2.0  4925.0  36720410   EGAS            GAS NATURAL INC   None    EGAS  221210        A       A       R    7953.0  60007906.0   10398.0      2.0    4925.0  36720410
+4  36720410  10001.0  7953.0  10398.0    2.0  4925.0  2010-08-31  10.150000  12.350000  10.371000  2595.0 -0.111263  10.40  10.60  6073.0     1.0      1.0  10.371000      NaN  2010-08-31 -0.115102   2010-08    NaN -0.111263   10001.0  2010-07-09  2017-08-03   11.0     2.0  4925.0  36720410   EGAS            GAS NATURAL INC   None    EGAS  221210        A       A       R    7953.0  60007906.0   10398.0      2.0    4925.0  36720410
+
+==================================================
+Processing file: crsp.msf.parquet
+==================================================
+
+Field Names and Data Types:
+<pyarrow._parquet.ParquetSchema object at 0x1119bce40>
+required group field_id=-1 schema {
+  optional binary field_id=-1 cusip (String);
+  optional int32 field_id=-1 permno;
+  optional int32 field_id=-1 permco;
+  optional int32 field_id=-1 issuno;
+  optional int32 field_id=-1 hexcd;
+  optional int32 field_id=-1 hsiccd;
+  optional binary field_id=-1 date (String);
+  optional double field_id=-1 bidlo;
+  optional double field_id=-1 askhi;
+  optional double field_id=-1 prc;
+  optional double field_id=-1 vol;
+  optional double field_id=-1 ret;
+  optional double field_id=-1 bid;
+  optional double field_id=-1 ask;
+  optional double field_id=-1 shrout;
+  optional double field_id=-1 cfacpr;
+  optional double field_id=-1 cfacshr;
+  optional double field_id=-1 altprc;
+  optional double field_id=-1 spread;
+  optional binary field_id=-1 altprcdt (String);
+  optional double field_id=-1 retx;
+}
+
+
+First 5 Rows:
+      cusip  permno  permco  issuno  hexcd  hsiccd        date    bidlo    askhi      prc       vol       ret      bid      ask    shrout  cfacpr  cfacshr   altprc  spread    altprcdt      retx
+0  74912E10   46228   21493       0      1  1381.0  1999-06-30   8.0000   9.8750   9.3750  469086.0  0.020408   9.0625   9.3125  193376.0     1.0      1.0   9.3750     NaN  1999-06-30  0.020408
+1  74912E10   46228   21493       0      1  1381.0  1999-07-30   9.0000  10.7500  10.1875  384931.0  0.086667   9.9375  10.1875  193376.0     1.0      1.0  10.1875     NaN  1999-07-30  0.086667
+2  74912E10   46228   21493       0      1  1381.0  1999-08-31   9.7500  13.0000  12.8125  650632.0  0.257669  12.6875  12.8125  193376.0     1.0      1.0  12.8125     NaN  1999-08-31  0.257669
+3  74912E10   46228   21493       0      1  1381.0  1999-09-30  13.1250  15.4375  13.1250  690306.0  0.024390  13.0625  13.2500  193376.0     1.0      1.0  13.1250     NaN  1999-09-30  0.024390
+4  74912E10   46228   21493       0      1  1381.0  1999-10-29  11.6875  13.3750  12.4375  408776.0 -0.052381  12.2500  12.6250  193376.0     1.0      1.0  12.4375     NaN  1999-10-29 -0.052381
