@@ -1,0 +1,26 @@
+
+==================================================
+Processing file: crsp.dsf_trimmed_with_ticker.parquet
+==================================================
+
+Field Names and Data Types:
+<pyarrow._parquet.ParquetSchema object at 0x104c28300>
+required group field_id=-1 schema {
+  optional int64 field_id=-1 date (Timestamp(isAdjustedToUTC=false, timeUnit=nanoseconds, is_from_converted_type=false, force_set_converted_type=false));
+  optional binary field_id=-1 ticker (String);
+  optional double field_id=-1 prc;
+  optional double field_id=-1 ret;
+  optional double field_id=-1 vol;
+  optional double field_id=-1 cfacpr;
+  optional double field_id=-1 cfacshr;
+  optional int64 field_id=-1 __index_level_0__;
+}
+
+
+First 5 Rows:
+         date ticker   prc       ret     vol  cfacpr  cfacshr
+5  1991-05-24   CBEN -5.25 -0.086957  1200.0     1.0      1.0
+15 1991-05-28   CBEN -5.25  0.000000    56.0     1.0      1.0
+25 1991-05-29   CBEN -5.25  0.000000     0.0     1.0      1.0
+35 1991-05-30   CBEN -5.25  0.000000     0.0     1.0      1.0
+45 1991-05-31   CBEN -5.25  0.000000   200.0     1.0      1.0

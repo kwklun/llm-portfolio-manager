@@ -7,18 +7,11 @@ folder_path = "/Users/kwklun/llm-portfolio-manager/data_mfin_7037_2024"
 
 # List of .parquet files to process
 parquet_files = [
-    "comp.finratios.parquet",
-    "comp.funda.parquet",
-    "crsp.ccmxpf_linktable.parquet",
-    "crsp.dsenames.parquet",
-    "crsp.dsf.parquet",
-    "crsp.msedelist.parquet",
-    "crsp.msf_delisting_adjusted.parquet",
-    "crsp.msf.parquet"
+    "crsp.dsf_trimmed_with_ticker.parquet",
 ]
 
 # Output file
-output_file = "parquet_desc.txt"
+output_file = "parquet_desc_new.txt"
 
 # Open the output file in write mode
 with open(output_file, "w") as f:

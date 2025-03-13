@@ -4,7 +4,7 @@ Processing file: comp.finratios.parquet
 ==================================================
 
 Field Names and Data Types:
-<pyarrow._parquet.ParquetSchema object at 0x100592d40>
+<pyarrow._parquet.ParquetSchema object at 0x105257640>
 required group field_id=-1 schema {
   optional binary field_id=-1 gvkey (String);
   optional double field_id=-1 permno;
@@ -120,7 +120,7 @@ Processing file: comp.funda.parquet
 ==================================================
 
 Field Names and Data Types:
-<pyarrow._parquet.ParquetSchema object at 0x1119aef40>
+<pyarrow._parquet.ParquetSchema object at 0x1052a0340>
 required group field_id=-1 schema {
   optional binary field_id=-1 gvkey (String);
   optional binary field_id=-1 datadate (String);
@@ -1086,7 +1086,7 @@ Processing file: crsp.ccmxpf_linktable.parquet
 ==================================================
 
 Field Names and Data Types:
-<pyarrow._parquet.ParquetSchema object at 0x135d1dfc0>
+<pyarrow._parquet.ParquetSchema object at 0x116a89f80>
 required group field_id=-1 schema {
   optional binary field_id=-1 gvkey (String);
   optional binary field_id=-1 linkprim (String);
@@ -1113,7 +1113,7 @@ Processing file: crsp.dsenames.parquet
 ==================================================
 
 Field Names and Data Types:
-<pyarrow._parquet.ParquetSchema object at 0x111dfec00>
+<pyarrow._parquet.ParquetSchema object at 0x1025a09c0>
 required group field_id=-1 schema {
   optional int32 field_id=-1 permno;
   optional binary field_id=-1 namedt (String);
@@ -1152,7 +1152,7 @@ Processing file: crsp.dsf.parquet
 ==================================================
 
 Field Names and Data Types:
-<pyarrow._parquet.ParquetSchema object at 0x1119c3d40>
+<pyarrow._parquet.ParquetSchema object at 0x105c84e80>
 required group field_id=-1 schema {
   optional binary field_id=-1 cusip (String);
   optional int32 field_id=-1 permno;
@@ -1190,7 +1190,7 @@ Processing file: crsp.msedelist.parquet
 ==================================================
 
 Field Names and Data Types:
-<pyarrow._parquet.ParquetSchema object at 0x125d3f700>
+<pyarrow._parquet.ParquetSchema object at 0x105c7f840>
 required group field_id=-1 schema {
   optional double field_id=-1 permno;
   optional binary field_id=-1 dlstdt (String);
@@ -1227,7 +1227,7 @@ Processing file: crsp.msf_delisting_adjusted.parquet
 ==================================================
 
 Field Names and Data Types:
-<pyarrow._parquet.ParquetSchema object at 0x1119ca640>
+<pyarrow._parquet.ParquetSchema object at 0x1003fadc0>
 required group field_id=-1 schema {
   optional binary field_id=-1 cusip (String);
   optional double field_id=-1 permno;
@@ -1290,7 +1290,7 @@ Processing file: crsp.msf.parquet
 ==================================================
 
 Field Names and Data Types:
-<pyarrow._parquet.ParquetSchema object at 0x1119bce40>
+<pyarrow._parquet.ParquetSchema object at 0x105c7fb80>
 required group field_id=-1 schema {
   optional binary field_id=-1 cusip (String);
   optional int32 field_id=-1 permno;

@@ -1,0 +1,25 @@
+
+==================================================
+Processing file: crsp.dsf_trimmed.parquet
+==================================================
+
+Field Names and Data Types:
+<pyarrow._parquet.ParquetSchema object at 0x112cc7cc0>
+required group field_id=-1 schema {
+  optional binary field_id=-1 date (String);
+  optional int32 field_id=-1 permno;
+  optional double field_id=-1 prc;
+  optional double field_id=-1 ret;
+  optional double field_id=-1 vol;
+  optional double field_id=-1 cfacpr;
+  optional double field_id=-1 cfacshr;
+}
+
+
+First 5 Rows:
+         date  permno   prc       ret     vol  cfacpr  cfacshr
+0  1991-05-24   86423 -5.25 -0.086957  1200.0     1.0      1.0
+1  1991-05-28   86423 -5.25  0.000000    56.0     1.0      1.0
+2  1991-05-29   86423 -5.25  0.000000     0.0     1.0      1.0
+3  1991-05-30   86423 -5.25  0.000000     0.0     1.0      1.0
+4  1991-05-31   86423 -5.25  0.000000   200.0     1.0      1.0
