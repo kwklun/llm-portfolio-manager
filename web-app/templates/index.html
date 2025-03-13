@@ -1,0 +1,159 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        form {
+            margin: 20px 0;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .error {
+            color: red;
+            margin-top: 20px;
+        }
+        .success {
+            color: green;
+        }
+        .market-status {
+            margin: 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .market-open {
+            color: green;
+        }
+        .market-closed {
+            color: red;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Price Prediction</h1>
+
+        <!-- Market Status -->
+        <div class="market-status {% if market_status == 'Open' %}market-open{% else %}market-closed{% endif %}">
+            Market Status: {{ market_status }}
+        </div>
+
+        <!-- Watchlist -->
+        <h2>Watchlist</h2>
+        <table id="watchlist-table">
+            <thead>
+                <tr>
+                    <th>Ticker</th>
+                    <th>Current Price ($)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in watchlist_data %}
+                <tr>
+                    <td>{{ item.symbol }}</td>
+                    <td class="price" data-symbol="{{ item.symbol }}">{{ item.price }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- Prediction Form -->
+        <h2>Predict Next Stock Price</h2>
+        <form method="POST">
+            <label for="ticker">Enter Ticker Symbol (e.g., AAPL):</label><br>
+            <input type="text" id="ticker" name="ticker" placeholder="Ticker" value="{{ ticker if ticker else '' }}">
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if error_message %}
+            <div class="result error">{{ error_message }}</div>
+        {% endif %}
+
+        {% if predicted_price is not none %}
+            <div class="result success">
+                Predicted next stock price for {{ ticker }}: ${{ predicted_price }}
+            </div>
+        {% endif %}
+    </div>
+
+    <!-- JavaScript for real-time price updates -->
+    <script>
+        function updatePrices() {
+            fetch('/update_prices')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        console.error(data.error);
+                        return;
+                    }
+                    data.forEach(item => {
+                        const priceCell = document.querySelector(`td[data-symbol="${item.symbol}"]`);
+                        if (priceCell) {
+                            priceCell.textContent = item.price;
+                        }
+                    });
+                })
+                .catch(error => console.error('Error fetching prices:', error));
+        }
+
+        // Update prices every second (1000 ms)
+        setInterval(updatePrices, 1000);
+
+        // Initial update on page load
+        updatePrices();
+    </script>
+</body>
+</html>

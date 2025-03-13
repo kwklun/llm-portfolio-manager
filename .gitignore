@@ -4,3 +4,6 @@ arima_backtest_results/
 random_forest/
 rf_backtest_results/
 new_arima_lightweight/
+data/
+data-too-big
+log/
